@@ -1,0 +1,598 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		80F5E1DE258AA09200C86B8D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80F5E1DD258AA09200C86B8D /* AppDelegate.swift */; };
+		80F5E1E0258AA09200C86B8D /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80F5E1DF258AA09200C86B8D /* SceneDelegate.swift */; };
+		80F5E1E2258AA09200C86B8D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80F5E1E1258AA09200C86B8D /* ViewController.swift */; };
+		80F5E1E5258AA09200C86B8D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 80F5E1E3258AA09200C86B8D /* Main.storyboard */; };
+		80F5E1E7258AA09900C86B8D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 80F5E1E6258AA09900C86B8D /* Assets.xcassets */; };
+		80F5E1EA258AA09900C86B8D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 80F5E1E8258AA09900C86B8D /* LaunchScreen.storyboard */; };
+		80F5E1F5258AA09A00C86B8D /* Sport_RiotTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80F5E1F4258AA09A00C86B8D /* Sport_RiotTests.swift */; };
+		80F5E200258AA09A00C86B8D /* Sport_RiotUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80F5E1FF258AA09A00C86B8D /* Sport_RiotUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		80F5E1F1258AA09A00C86B8D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 80F5E1D2258AA09200C86B8D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 80F5E1D9258AA09200C86B8D;
+			remoteInfo = "Sport Riot";
+		};
+		80F5E1FC258AA09A00C86B8D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 80F5E1D2258AA09200C86B8D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 80F5E1D9258AA09200C86B8D;
+			remoteInfo = "Sport Riot";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		80F5E1DA258AA09200C86B8D /* Sport Riot.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Sport Riot.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		80F5E1DD258AA09200C86B8D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		80F5E1DF258AA09200C86B8D /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		80F5E1E1258AA09200C86B8D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		80F5E1E4258AA09200C86B8D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		80F5E1E6258AA09900C86B8D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		80F5E1E9258AA09900C86B8D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		80F5E1EB258AA09900C86B8D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		80F5E1F0258AA09A00C86B8D /* Sport RiotTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Sport RiotTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		80F5E1F4258AA09A00C86B8D /* Sport_RiotTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sport_RiotTests.swift; sourceTree = "<group>"; };
+		80F5E1F6258AA09A00C86B8D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		80F5E1FB258AA09A00C86B8D /* Sport RiotUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Sport RiotUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		80F5E1FF258AA09A00C86B8D /* Sport_RiotUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sport_RiotUITests.swift; sourceTree = "<group>"; };
+		80F5E201258AA09A00C86B8D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		80F5E1D7258AA09200C86B8D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		80F5E1ED258AA09A00C86B8D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		80F5E1F8258AA09A00C86B8D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		80F5E1D1258AA09200C86B8D = {
+			isa = PBXGroup;
+			children = (
+				80F5E1DC258AA09200C86B8D /* Sport Riot */,
+				80F5E1F3258AA09A00C86B8D /* Sport RiotTests */,
+				80F5E1FE258AA09A00C86B8D /* Sport RiotUITests */,
+				80F5E1DB258AA09200C86B8D /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		80F5E1DB258AA09200C86B8D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				80F5E1DA258AA09200C86B8D /* Sport Riot.app */,
+				80F5E1F0258AA09A00C86B8D /* Sport RiotTests.xctest */,
+				80F5E1FB258AA09A00C86B8D /* Sport RiotUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		80F5E1DC258AA09200C86B8D /* Sport Riot */ = {
+			isa = PBXGroup;
+			children = (
+				80F5E1DD258AA09200C86B8D /* AppDelegate.swift */,
+				80F5E1DF258AA09200C86B8D /* SceneDelegate.swift */,
+				80F5E1E1258AA09200C86B8D /* ViewController.swift */,
+				80F5E1E3258AA09200C86B8D /* Main.storyboard */,
+				80F5E1E6258AA09900C86B8D /* Assets.xcassets */,
+				80F5E1E8258AA09900C86B8D /* LaunchScreen.storyboard */,
+				80F5E1EB258AA09900C86B8D /* Info.plist */,
+			);
+			path = "Sport Riot";
+			sourceTree = "<group>";
+		};
+		80F5E1F3258AA09A00C86B8D /* Sport RiotTests */ = {
+			isa = PBXGroup;
+			children = (
+				80F5E1F4258AA09A00C86B8D /* Sport_RiotTests.swift */,
+				80F5E1F6258AA09A00C86B8D /* Info.plist */,
+			);
+			path = "Sport RiotTests";
+			sourceTree = "<group>";
+		};
+		80F5E1FE258AA09A00C86B8D /* Sport RiotUITests */ = {
+			isa = PBXGroup;
+			children = (
+				80F5E1FF258AA09A00C86B8D /* Sport_RiotUITests.swift */,
+				80F5E201258AA09A00C86B8D /* Info.plist */,
+			);
+			path = "Sport RiotUITests";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		80F5E1D9258AA09200C86B8D /* Sport Riot */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 80F5E204258AA09A00C86B8D /* Build configuration list for PBXNativeTarget "Sport Riot" */;
+			buildPhases = (
+				80F5E1D6258AA09200C86B8D /* Sources */,
+				80F5E1D7258AA09200C86B8D /* Frameworks */,
+				80F5E1D8258AA09200C86B8D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Sport Riot";
+			productName = "Sport Riot";
+			productReference = 80F5E1DA258AA09200C86B8D /* Sport Riot.app */;
+			productType = "com.apple.product-type.application";
+		};
+		80F5E1EF258AA09A00C86B8D /* Sport RiotTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 80F5E207258AA09A00C86B8D /* Build configuration list for PBXNativeTarget "Sport RiotTests" */;
+			buildPhases = (
+				80F5E1EC258AA09A00C86B8D /* Sources */,
+				80F5E1ED258AA09A00C86B8D /* Frameworks */,
+				80F5E1EE258AA09A00C86B8D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				80F5E1F2258AA09A00C86B8D /* PBXTargetDependency */,
+			);
+			name = "Sport RiotTests";
+			productName = "Sport RiotTests";
+			productReference = 80F5E1F0258AA09A00C86B8D /* Sport RiotTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		80F5E1FA258AA09A00C86B8D /* Sport RiotUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 80F5E20A258AA09A00C86B8D /* Build configuration list for PBXNativeTarget "Sport RiotUITests" */;
+			buildPhases = (
+				80F5E1F7258AA09A00C86B8D /* Sources */,
+				80F5E1F8258AA09A00C86B8D /* Frameworks */,
+				80F5E1F9258AA09A00C86B8D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				80F5E1FD258AA09A00C86B8D /* PBXTargetDependency */,
+			);
+			name = "Sport RiotUITests";
+			productName = "Sport RiotUITests";
+			productReference = 80F5E1FB258AA09A00C86B8D /* Sport RiotUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		80F5E1D2258AA09200C86B8D /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1220;
+				LastUpgradeCheck = 1220;
+				TargetAttributes = {
+					80F5E1D9258AA09200C86B8D = {
+						CreatedOnToolsVersion = 12.2;
+					};
+					80F5E1EF258AA09A00C86B8D = {
+						CreatedOnToolsVersion = 12.2;
+						TestTargetID = 80F5E1D9258AA09200C86B8D;
+					};
+					80F5E1FA258AA09A00C86B8D = {
+						CreatedOnToolsVersion = 12.2;
+						TestTargetID = 80F5E1D9258AA09200C86B8D;
+					};
+				};
+			};
+			buildConfigurationList = 80F5E1D5258AA09200C86B8D /* Build configuration list for PBXProject "Sport Riot" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 80F5E1D1258AA09200C86B8D;
+			productRefGroup = 80F5E1DB258AA09200C86B8D /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				80F5E1D9258AA09200C86B8D /* Sport Riot */,
+				80F5E1EF258AA09A00C86B8D /* Sport RiotTests */,
+				80F5E1FA258AA09A00C86B8D /* Sport RiotUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		80F5E1D8258AA09200C86B8D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				80F5E1EA258AA09900C86B8D /* LaunchScreen.storyboard in Resources */,
+				80F5E1E7258AA09900C86B8D /* Assets.xcassets in Resources */,
+				80F5E1E5258AA09200C86B8D /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		80F5E1EE258AA09A00C86B8D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		80F5E1F9258AA09A00C86B8D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		80F5E1D6258AA09200C86B8D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				80F5E1E2258AA09200C86B8D /* ViewController.swift in Sources */,
+				80F5E1DE258AA09200C86B8D /* AppDelegate.swift in Sources */,
+				80F5E1E0258AA09200C86B8D /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		80F5E1EC258AA09A00C86B8D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				80F5E1F5258AA09A00C86B8D /* Sport_RiotTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		80F5E1F7258AA09A00C86B8D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				80F5E200258AA09A00C86B8D /* Sport_RiotUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		80F5E1F2258AA09A00C86B8D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 80F5E1D9258AA09200C86B8D /* Sport Riot */;
+			targetProxy = 80F5E1F1258AA09A00C86B8D /* PBXContainerItemProxy */;
+		};
+		80F5E1FD258AA09A00C86B8D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 80F5E1D9258AA09200C86B8D /* Sport Riot */;
+			targetProxy = 80F5E1FC258AA09A00C86B8D /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		80F5E1E3258AA09200C86B8D /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				80F5E1E4258AA09200C86B8D /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		80F5E1E8258AA09900C86B8D /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				80F5E1E9258AA09900C86B8D /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		80F5E202258AA09A00C86B8D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		80F5E203258AA09A00C86B8D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		80F5E205258AA09A00C86B8D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 5792949ZYF;
+				INFOPLIST_FILE = "Sport Riot/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.jesseruiz.Sport-Riot";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		80F5E206258AA09A00C86B8D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 5792949ZYF;
+				INFOPLIST_FILE = "Sport Riot/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.jesseruiz.Sport-Riot";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		80F5E208258AA09A00C86B8D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 5792949ZYF;
+				INFOPLIST_FILE = "Sport RiotTests/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.jesseruiz.Sport-RiotTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Sport Riot.app/Sport Riot";
+			};
+			name = Debug;
+		};
+		80F5E209258AA09A00C86B8D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 5792949ZYF;
+				INFOPLIST_FILE = "Sport RiotTests/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.jesseruiz.Sport-RiotTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Sport Riot.app/Sport Riot";
+			};
+			name = Release;
+		};
+		80F5E20B258AA09A00C86B8D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 5792949ZYF;
+				INFOPLIST_FILE = "Sport RiotUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.jesseruiz.Sport-RiotUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "Sport Riot";
+			};
+			name = Debug;
+		};
+		80F5E20C258AA09A00C86B8D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 5792949ZYF;
+				INFOPLIST_FILE = "Sport RiotUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.jesseruiz.Sport-RiotUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "Sport Riot";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		80F5E1D5258AA09200C86B8D /* Build configuration list for PBXProject "Sport Riot" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				80F5E202258AA09A00C86B8D /* Debug */,
+				80F5E203258AA09A00C86B8D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		80F5E204258AA09A00C86B8D /* Build configuration list for PBXNativeTarget "Sport Riot" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				80F5E205258AA09A00C86B8D /* Debug */,
+				80F5E206258AA09A00C86B8D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		80F5E207258AA09A00C86B8D /* Build configuration list for PBXNativeTarget "Sport RiotTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				80F5E208258AA09A00C86B8D /* Debug */,
+				80F5E209258AA09A00C86B8D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		80F5E20A258AA09A00C86B8D /* Build configuration list for PBXNativeTarget "Sport RiotUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				80F5E20B258AA09A00C86B8D /* Debug */,
+				80F5E20C258AA09A00C86B8D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 80F5E1D2258AA09200C86B8D /* Project object */;
+}
