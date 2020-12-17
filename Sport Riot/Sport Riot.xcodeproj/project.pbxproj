@@ -15,6 +15,7 @@
 		80F5E1EA258AA09900C86B8D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 80F5E1E8258AA09900C86B8D /* LaunchScreen.storyboard */; };
 		80F5E1F5258AA09A00C86B8D /* Sport_RiotTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80F5E1F4258AA09A00C86B8D /* Sport_RiotTests.swift */; };
 		80F5E200258AA09A00C86B8D /* Sport_RiotUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80F5E1FF258AA09A00C86B8D /* Sport_RiotUITests.swift */; };
+		80F5E23E258AE44800C86B8D /* Event.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80F5E23D258AE44800C86B8D /* Event.swift */; };
 		9D53835B36DB94A048A19FA7 /* Pods_Sport_Riot.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 77C5A345BC33E2C424EC54B6 /* Pods_Sport_Riot.framework */; };
 		A7B3259E0551030DB83CA7F8 /* Pods_Sport_Riot_Sport_RiotUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3FAC3D993862D4BC4B7B66E1 /* Pods_Sport_Riot_Sport_RiotUITests.framework */; };
 /* End PBXBuildFile section */
@@ -58,6 +59,7 @@
 		80F5E1FB258AA09A00C86B8D /* Sport RiotUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Sport RiotUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		80F5E1FF258AA09A00C86B8D /* Sport_RiotUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sport_RiotUITests.swift; sourceTree = "<group>"; };
 		80F5E201258AA09A00C86B8D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		80F5E23D258AE44800C86B8D /* Event.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Event.swift; sourceTree = "<group>"; };
 		CC95921688A364F26233AB29 /* Pods-Sport Riot.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Sport Riot.release.xcconfig"; path = "Target Support Files/Pods-Sport Riot/Pods-Sport Riot.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -130,6 +132,7 @@
 				80F5E1E6258AA09900C86B8D /* Assets.xcassets */,
 				80F5E1E8258AA09900C86B8D /* LaunchScreen.storyboard */,
 				80F5E1EB258AA09900C86B8D /* Info.plist */,
+				80F5E23D258AE44800C86B8D /* Event.swift */,
 			);
 			path = "Sport Riot";
 			sourceTree = "<group>";
@@ -386,6 +389,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				80F5E1DE258AA09200C86B8D /* AppDelegate.swift in Sources */,
+				80F5E23E258AE44800C86B8D /* Event.swift in Sources */,
 				80F5E1E0258AA09200C86B8D /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
