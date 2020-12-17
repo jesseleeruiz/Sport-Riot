@@ -7,7 +7,7 @@
 
 import Foundation
 
-struct Event: Codable, Equatable {
+struct Event: Decodable, Equatable {
     let title: String
     let type: String
     let datetimeLocal: String
@@ -17,17 +17,17 @@ struct Event: Codable, Equatable {
     let vanue: Venue
 }
 
-struct Performers: Codable, Equatable {
+struct Performers: Decodable, Equatable {
     let image: String
 }
 
-struct Stats: Codable, Equatable {
+struct Stats: Decodable, Equatable {
     let listingCount: Int?
     let lowestPrice: Int?
     let averagePrice: Int?
     let highestPrice: Int?
 }
 
-struct Venue: Codable, Equatable {
+struct Venue: Decodable, Equatable {
     let displayLocation: String
 }
