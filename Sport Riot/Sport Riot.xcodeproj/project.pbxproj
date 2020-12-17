@@ -19,6 +19,8 @@
 		80F5E248258AEA8800C86B8D /* EventsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80F5E247258AEA8800C86B8D /* EventsController.swift */; };
 		80F5E24E258AF59800C86B8D /* SRError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80F5E24D258AF59800C86B8D /* SRError.swift */; };
 		80F5E256258B324E00C86B8D /* HTTPMethod.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80F5E255258B324E00C86B8D /* HTTPMethod.swift */; };
+		80F5E25C258BD9D900C86B8D /* ClientKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80F5E25B258BD9D900C86B8D /* ClientKey.swift */; };
+		80F5E261258BD9E500C86B8D /* ClientKeyTemplate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80F5E260258BD9E500C86B8D /* ClientKeyTemplate.swift */; };
 		9D53835B36DB94A048A19FA7 /* Pods_Sport_Riot.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 77C5A345BC33E2C424EC54B6 /* Pods_Sport_Riot.framework */; };
 		A7B3259E0551030DB83CA7F8 /* Pods_Sport_Riot_Sport_RiotUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3FAC3D993862D4BC4B7B66E1 /* Pods_Sport_Riot_Sport_RiotUITests.framework */; };
 /* End PBXBuildFile section */
@@ -66,6 +68,8 @@
 		80F5E247258AEA8800C86B8D /* EventsController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventsController.swift; sourceTree = "<group>"; };
 		80F5E24D258AF59800C86B8D /* SRError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SRError.swift; sourceTree = "<group>"; };
 		80F5E255258B324E00C86B8D /* HTTPMethod.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPMethod.swift; sourceTree = "<group>"; };
+		80F5E25B258BD9D900C86B8D /* ClientKey.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClientKey.swift; sourceTree = "<group>"; };
+		80F5E260258BD9E500C86B8D /* ClientKeyTemplate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClientKeyTemplate.swift; sourceTree = "<group>"; };
 		CC95921688A364F26233AB29 /* Pods-Sport Riot.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Sport Riot.release.xcconfig"; path = "Target Support Files/Pods-Sport Riot/Pods-Sport Riot.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -182,10 +186,20 @@
 		80F5E24C258AF58200C86B8D /* Utilities */ = {
 			isa = PBXGroup;
 			children = (
+				80F5E25A258BD9B500C86B8D /* APIKey */,
 				80F5E24D258AF59800C86B8D /* SRError.swift */,
 				80F5E255258B324E00C86B8D /* HTTPMethod.swift */,
 			);
 			path = Utilities;
+			sourceTree = "<group>";
+		};
+		80F5E25A258BD9B500C86B8D /* APIKey */ = {
+			isa = PBXGroup;
+			children = (
+				80F5E25B258BD9D900C86B8D /* ClientKey.swift */,
+				80F5E260258BD9E500C86B8D /* ClientKeyTemplate.swift */,
+			);
+			path = APIKey;
 			sourceTree = "<group>";
 		};
 		92DEEAA0B88E24F34B8BEF41 /* Pods */ = {
@@ -425,7 +439,9 @@
 				80F5E24E258AF59800C86B8D /* SRError.swift in Sources */,
 				80F5E256258B324E00C86B8D /* HTTPMethod.swift in Sources */,
 				80F5E23E258AE44800C86B8D /* Event.swift in Sources */,
+				80F5E25C258BD9D900C86B8D /* ClientKey.swift in Sources */,
 				80F5E248258AEA8800C86B8D /* EventsController.swift in Sources */,
+				80F5E261258BD9E500C86B8D /* ClientKeyTemplate.swift in Sources */,
 				80F5E1E0258AA09200C86B8D /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
