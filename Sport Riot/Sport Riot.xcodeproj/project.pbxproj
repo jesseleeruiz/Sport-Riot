@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3553508C61BCD83AC5DF60CB /* Pods_Sport_RiotTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 66E434CCFF23EA336AB09438 /* Pods_Sport_RiotTests.framework */; };
 		80F5E1DE258AA09200C86B8D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80F5E1DD258AA09200C86B8D /* AppDelegate.swift */; };
 		80F5E1E0258AA09200C86B8D /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80F5E1DF258AA09200C86B8D /* SceneDelegate.swift */; };
 		80F5E1E5258AA09200C86B8D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 80F5E1E3258AA09200C86B8D /* Main.storyboard */; };
@@ -14,6 +15,8 @@
 		80F5E1EA258AA09900C86B8D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 80F5E1E8258AA09900C86B8D /* LaunchScreen.storyboard */; };
 		80F5E1F5258AA09A00C86B8D /* Sport_RiotTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80F5E1F4258AA09A00C86B8D /* Sport_RiotTests.swift */; };
 		80F5E200258AA09A00C86B8D /* Sport_RiotUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80F5E1FF258AA09A00C86B8D /* Sport_RiotUITests.swift */; };
+		9D53835B36DB94A048A19FA7 /* Pods_Sport_Riot.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 77C5A345BC33E2C424EC54B6 /* Pods_Sport_Riot.framework */; };
+		A7B3259E0551030DB83CA7F8 /* Pods_Sport_Riot_Sport_RiotUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3FAC3D993862D4BC4B7B66E1 /* Pods_Sport_Riot_Sport_RiotUITests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,6 +37,14 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0377ECFA20FE08969D5503BF /* Pods-Sport Riot-Sport RiotUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Sport Riot-Sport RiotUITests.release.xcconfig"; path = "Target Support Files/Pods-Sport Riot-Sport RiotUITests/Pods-Sport Riot-Sport RiotUITests.release.xcconfig"; sourceTree = "<group>"; };
+		33888E001F09A88176DB9A99 /* Pods-Sport Riot-Sport RiotUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Sport Riot-Sport RiotUITests.debug.xcconfig"; path = "Target Support Files/Pods-Sport Riot-Sport RiotUITests/Pods-Sport Riot-Sport RiotUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		3FAC3D993862D4BC4B7B66E1 /* Pods_Sport_Riot_Sport_RiotUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Sport_Riot_Sport_RiotUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		42C8610E4A167C27FC78CCD2 /* Pods-Sport Riot.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Sport Riot.debug.xcconfig"; path = "Target Support Files/Pods-Sport Riot/Pods-Sport Riot.debug.xcconfig"; sourceTree = "<group>"; };
+		531DCE19987E1B836ABCC19E /* Pods-Sport RiotTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Sport RiotTests.release.xcconfig"; path = "Target Support Files/Pods-Sport RiotTests/Pods-Sport RiotTests.release.xcconfig"; sourceTree = "<group>"; };
+		66E434CCFF23EA336AB09438 /* Pods_Sport_RiotTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Sport_RiotTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		6C5DA2E3CC590E618D42C055 /* Pods-Sport RiotTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Sport RiotTests.debug.xcconfig"; path = "Target Support Files/Pods-Sport RiotTests/Pods-Sport RiotTests.debug.xcconfig"; sourceTree = "<group>"; };
+		77C5A345BC33E2C424EC54B6 /* Pods_Sport_Riot.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Sport_Riot.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		80F5E1DA258AA09200C86B8D /* Sport Riot.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Sport Riot.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		80F5E1DD258AA09200C86B8D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		80F5E1DF258AA09200C86B8D /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -47,6 +58,7 @@
 		80F5E1FB258AA09A00C86B8D /* Sport RiotUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Sport RiotUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		80F5E1FF258AA09A00C86B8D /* Sport_RiotUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sport_RiotUITests.swift; sourceTree = "<group>"; };
 		80F5E201258AA09A00C86B8D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CC95921688A364F26233AB29 /* Pods-Sport Riot.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Sport Riot.release.xcconfig"; path = "Target Support Files/Pods-Sport Riot/Pods-Sport Riot.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +66,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9D53835B36DB94A048A19FA7 /* Pods_Sport_Riot.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -61,6 +74,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3553508C61BCD83AC5DF60CB /* Pods_Sport_RiotTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -68,12 +82,23 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A7B3259E0551030DB83CA7F8 /* Pods_Sport_Riot_Sport_RiotUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		4F9DD8563C0999C702280006 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				77C5A345BC33E2C424EC54B6 /* Pods_Sport_Riot.framework */,
+				3FAC3D993862D4BC4B7B66E1 /* Pods_Sport_Riot_Sport_RiotUITests.framework */,
+				66E434CCFF23EA336AB09438 /* Pods_Sport_RiotTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		80F5E1D1258AA09200C86B8D = {
 			isa = PBXGroup;
 			children = (
@@ -81,6 +106,8 @@
 				80F5E1F3258AA09A00C86B8D /* Sport RiotTests */,
 				80F5E1FE258AA09A00C86B8D /* Sport RiotUITests */,
 				80F5E1DB258AA09200C86B8D /* Products */,
+				92DEEAA0B88E24F34B8BEF41 /* Pods */,
+				4F9DD8563C0999C702280006 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -125,6 +152,19 @@
 			path = "Sport RiotUITests";
 			sourceTree = "<group>";
 		};
+		92DEEAA0B88E24F34B8BEF41 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				42C8610E4A167C27FC78CCD2 /* Pods-Sport Riot.debug.xcconfig */,
+				CC95921688A364F26233AB29 /* Pods-Sport Riot.release.xcconfig */,
+				33888E001F09A88176DB9A99 /* Pods-Sport Riot-Sport RiotUITests.debug.xcconfig */,
+				0377ECFA20FE08969D5503BF /* Pods-Sport Riot-Sport RiotUITests.release.xcconfig */,
+				6C5DA2E3CC590E618D42C055 /* Pods-Sport RiotTests.debug.xcconfig */,
+				531DCE19987E1B836ABCC19E /* Pods-Sport RiotTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -132,6 +172,8 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 80F5E204258AA09A00C86B8D /* Build configuration list for PBXNativeTarget "Sport Riot" */;
 			buildPhases = (
+				80F5E224258ADC7C00C86B8D /* ShellScript */,
+				E87B1AA17A293903AA9D05A6 /* [CP] Check Pods Manifest.lock */,
 				80F5E1D6258AA09200C86B8D /* Sources */,
 				80F5E1D7258AA09200C86B8D /* Frameworks */,
 				80F5E1D8258AA09200C86B8D /* Resources */,
@@ -149,6 +191,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 80F5E207258AA09A00C86B8D /* Build configuration list for PBXNativeTarget "Sport RiotTests" */;
 			buildPhases = (
+				82A498495A21D5ADD69D332C /* [CP] Check Pods Manifest.lock */,
 				80F5E1EC258AA09A00C86B8D /* Sources */,
 				80F5E1ED258AA09A00C86B8D /* Frameworks */,
 				80F5E1EE258AA09A00C86B8D /* Resources */,
@@ -167,6 +210,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 80F5E20A258AA09A00C86B8D /* Build configuration list for PBXNativeTarget "Sport RiotUITests" */;
 			buildPhases = (
+				B9E3CE7E73D9EAD1F0683039 /* [CP] Check Pods Manifest.lock */,
 				80F5E1F7258AA09A00C86B8D /* Sources */,
 				80F5E1F8258AA09A00C86B8D /* Frameworks */,
 				80F5E1F9258AA09A00C86B8D /* Resources */,
@@ -249,6 +293,92 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		80F5E224258ADC7C00C86B8D /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/SwiftLint/swiftlint\"\n";
+		};
+		82A498495A21D5ADD69D332C /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Sport RiotTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B9E3CE7E73D9EAD1F0683039 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Sport Riot-Sport RiotUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E87B1AA17A293903AA9D05A6 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Sport Riot-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		80F5E1D6258AA09200C86B8D /* Sources */ = {
@@ -429,6 +559,7 @@
 		};
 		80F5E205258AA09A00C86B8D /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 42C8610E4A167C27FC78CCD2 /* Pods-Sport Riot.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -449,6 +580,7 @@
 		};
 		80F5E206258AA09A00C86B8D /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = CC95921688A364F26233AB29 /* Pods-Sport Riot.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -469,6 +601,7 @@
 		};
 		80F5E208258AA09A00C86B8D /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6C5DA2E3CC590E618D42C055 /* Pods-Sport RiotTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -491,6 +624,7 @@
 		};
 		80F5E209258AA09A00C86B8D /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 531DCE19987E1B836ABCC19E /* Pods-Sport RiotTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -513,6 +647,7 @@
 		};
 		80F5E20B258AA09A00C86B8D /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 33888E001F09A88176DB9A99 /* Pods-Sport Riot-Sport RiotUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -533,6 +668,7 @@
 		};
 		80F5E20C258AA09A00C86B8D /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0377ECFA20FE08969D5503BF /* Pods-Sport Riot-Sport RiotUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;

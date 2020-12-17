@@ -1,0 +1,870 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXAggregateTarget section */
+		52B60EC2A583F24ACBB69C113F5488B9 /* SwiftLint */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = AE7B4FB01588B9E6DF09CB79FC7CE7BD /* Build configuration list for PBXAggregateTarget "SwiftLint" */;
+			buildPhases = (
+			);
+			dependencies = (
+			);
+			name = SwiftLint;
+			productName = SwiftLint;
+		};
+/* End PBXAggregateTarget section */
+
+/* Begin PBXBuildFile section */
+		0015A70515E439C456E6E29CF4286991 /* Pods-Sport RiotTests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 8DC5448BD2ACB11334CAB52341610BE1 /* Pods-Sport RiotTests-dummy.m */; };
+		02C2E3D72C46833D202C2590379C1569 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
+		35FBCA711230EF629F7BC85BB73CB7E1 /* Pods-Sport Riot-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 85D0B31CAE715F41DC5E122BC9BE24E2 /* Pods-Sport Riot-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		456E4EB5AC329B5EB63ADCEDCB43443E /* Pods-Sport Riot-Sport RiotUITests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 7E44FD4E5CB5C682BF8CDFC32514E9A8 /* Pods-Sport Riot-Sport RiotUITests-dummy.m */; };
+		59FD3C523438A0CD3F7E6DE44EFC35A3 /* Pods-Sport Riot-Sport RiotUITests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = DADB0C536FB112335A6BC075BF41C555 /* Pods-Sport Riot-Sport RiotUITests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		85C0C110224318AA348ACAEDA53EC942 /* Pods-Sport RiotTests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = F0E46A0EFD3826C30293F0F21797636C /* Pods-Sport RiotTests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B0445607801F15BA0D17A786C690607D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
+		DBA1979763605215A2AFFDF96B818DB8 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
+		F4691D4D4F230BB0BAA6D9A0870787C6 /* Pods-Sport Riot-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = E644B953390B542259AEB642F80A28F5 /* Pods-Sport Riot-dummy.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		373E303105DB552BFFE6708D30988E7C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 52B60EC2A583F24ACBB69C113F5488B9;
+			remoteInfo = SwiftLint;
+		};
+		8F9CD4461042881D37C612B771396A8A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8D7104A6AB97539E83DF6B69C48C81BA;
+			remoteInfo = "Pods-Sport Riot";
+		};
+		E4540BE94849FC4C35C864E0A9971F20 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 52B60EC2A583F24ACBB69C113F5488B9;
+			remoteInfo = SwiftLint;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0567ECA13DA7724368A94CAC4135CF08 /* Pods-Sport Riot-Sport RiotUITests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-Sport Riot-Sport RiotUITests.modulemap"; sourceTree = "<group>"; };
+		1C95E1CEE46AC4BDFD86DBA67432310B /* Pods-Sport Riot-Sport RiotUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Sport Riot-Sport RiotUITests.release.xcconfig"; sourceTree = "<group>"; };
+		21545F488270EFDB131BBE5C05990A0C /* Pods-Sport Riot-Sport RiotUITests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Sport Riot-Sport RiotUITests-Info.plist"; sourceTree = "<group>"; };
+		2F4B2BD256EDFA7D851A3356BF4338B3 /* Pods-Sport RiotTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Sport RiotTests.release.xcconfig"; sourceTree = "<group>"; };
+		3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		46FB256AB6B45D5A95A0C15FDA79680D /* Pods-Sport RiotTests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-Sport RiotTests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		512F21FA045D4617520BA707F7C46F31 /* Pods-Sport Riot.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Sport Riot.release.xcconfig"; sourceTree = "<group>"; };
+		59114E37E3C9FFE10FDDBB8A19CDE5ED /* Pods-Sport Riot.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-Sport Riot.modulemap"; sourceTree = "<group>"; };
+		59966FAF1C909C1DE28BFBD06665BBAC /* Pods-Sport RiotTests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Sport RiotTests-Info.plist"; sourceTree = "<group>"; };
+		5FBA1102D577FCB936828A9210D65A03 /* Pods-Sport Riot-Sport RiotUITests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Sport Riot-Sport RiotUITests-acknowledgements.plist"; sourceTree = "<group>"; };
+		7B875F7A932F54F3831F3C78E5ECFC81 /* Pods-Sport RiotTests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Sport RiotTests-acknowledgements.plist"; sourceTree = "<group>"; };
+		7E44FD4E5CB5C682BF8CDFC32514E9A8 /* Pods-Sport Riot-Sport RiotUITests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Sport Riot-Sport RiotUITests-dummy.m"; sourceTree = "<group>"; };
+		85D0B31CAE715F41DC5E122BC9BE24E2 /* Pods-Sport Riot-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Sport Riot-umbrella.h"; sourceTree = "<group>"; };
+		89F85ACF3D78B39506B75103B4694B36 /* SwiftLint.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SwiftLint.xcconfig; sourceTree = "<group>"; };
+		8DC5448BD2ACB11334CAB52341610BE1 /* Pods-Sport RiotTests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Sport RiotTests-dummy.m"; sourceTree = "<group>"; };
+		97B0FDD65ED6078AC13BDD8AA8FCA439 /* Pods-Sport RiotTests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-Sport RiotTests.modulemap"; sourceTree = "<group>"; };
+		99D92C9D6DC1A6CA6DC4B4EBCC887DE7 /* Pods_Sport_RiotTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Sport_RiotTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		A98D5FE74F2AE3A5552E41C40DE6A716 /* Pods_Sport_Riot.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Sport_Riot.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		AA94929A6A291984AA0DF3FAFBB29BFB /* Pods-Sport Riot.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Sport Riot.debug.xcconfig"; sourceTree = "<group>"; };
+		B2A4CE037D89677B6DB30BC31F916CED /* Pods-Sport Riot-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Sport Riot-acknowledgements.plist"; sourceTree = "<group>"; };
+		B51B7642A09DD0CE4E0A9AEB133A32E9 /* Pods-Sport Riot-Sport RiotUITests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-Sport Riot-Sport RiotUITests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		B8CE5B59F633B984FA97100DCB3796E9 /* Pods-Sport Riot-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Sport Riot-Info.plist"; sourceTree = "<group>"; };
+		BA70D6BD01830068A0142BBE0471DC90 /* Pods-Sport RiotTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Sport RiotTests.debug.xcconfig"; sourceTree = "<group>"; };
+		CE874F315A2B77A6FA4D8971AB9CEB6B /* Pods-Sport Riot-Sport RiotUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Sport Riot-Sport RiotUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		D7EE4073CF8E7E5DE8500B7CA9AE0BFE /* Pods_Sport_Riot_Sport_RiotUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Sport_Riot_Sport_RiotUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		DADB0C536FB112335A6BC075BF41C555 /* Pods-Sport Riot-Sport RiotUITests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Sport Riot-Sport RiotUITests-umbrella.h"; sourceTree = "<group>"; };
+		E39871215DC73DC2AF03A83643A93700 /* Pods-Sport Riot-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-Sport Riot-acknowledgements.markdown"; sourceTree = "<group>"; };
+		E644B953390B542259AEB642F80A28F5 /* Pods-Sport Riot-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Sport Riot-dummy.m"; sourceTree = "<group>"; };
+		F0E46A0EFD3826C30293F0F21797636C /* Pods-Sport RiotTests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Sport RiotTests-umbrella.h"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		4DD07630752786C73F1B12A9B100B1B6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DBA1979763605215A2AFFDF96B818DB8 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		89049E1A288FA590568D26E670716520 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				02C2E3D72C46833D202C2590379C1569 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D87A263476A67654D34EA55C83909FCC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B0445607801F15BA0D17A786C690607D /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		14F8526DE59F241380EDE9AC0147381E /* Pods-Sport RiotTests */ = {
+			isa = PBXGroup;
+			children = (
+				97B0FDD65ED6078AC13BDD8AA8FCA439 /* Pods-Sport RiotTests.modulemap */,
+				46FB256AB6B45D5A95A0C15FDA79680D /* Pods-Sport RiotTests-acknowledgements.markdown */,
+				7B875F7A932F54F3831F3C78E5ECFC81 /* Pods-Sport RiotTests-acknowledgements.plist */,
+				8DC5448BD2ACB11334CAB52341610BE1 /* Pods-Sport RiotTests-dummy.m */,
+				59966FAF1C909C1DE28BFBD06665BBAC /* Pods-Sport RiotTests-Info.plist */,
+				F0E46A0EFD3826C30293F0F21797636C /* Pods-Sport RiotTests-umbrella.h */,
+				BA70D6BD01830068A0142BBE0471DC90 /* Pods-Sport RiotTests.debug.xcconfig */,
+				2F4B2BD256EDFA7D851A3356BF4338B3 /* Pods-Sport RiotTests.release.xcconfig */,
+			);
+			name = "Pods-Sport RiotTests";
+			path = "Target Support Files/Pods-Sport RiotTests";
+			sourceTree = "<group>";
+		};
+		24C2A0965024A4C376471A4B2A869806 /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				ED92973D58504E09395AF76DD0832A77 /* Pods-Sport Riot */,
+				C42B33B6DC42FEE9D123E3441ABEBA12 /* Pods-Sport Riot-Sport RiotUITests */,
+				14F8526DE59F241380EDE9AC0147381E /* Pods-Sport RiotTests */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		5B191A7735196F9D2C165109AAD18319 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A98D5FE74F2AE3A5552E41C40DE6A716 /* Pods_Sport_Riot.framework */,
+				D7EE4073CF8E7E5DE8500B7CA9AE0BFE /* Pods_Sport_Riot_Sport_RiotUITests.framework */,
+				99D92C9D6DC1A6CA6DC4B4EBCC887DE7 /* Pods_Sport_RiotTests.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		965877409E01FB3D85D85E90E6B30185 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				9AED61B9A1CFA211C061344F741DBA07 /* SwiftLint */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		9AED61B9A1CFA211C061344F741DBA07 /* SwiftLint */ = {
+			isa = PBXGroup;
+			children = (
+				EEA599FE5C15138FF0981CCFB01E55AA /* Support Files */,
+			);
+			path = SwiftLint;
+			sourceTree = "<group>";
+		};
+		C0834CEBB1379A84116EF29F93051C60 /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		C42B33B6DC42FEE9D123E3441ABEBA12 /* Pods-Sport Riot-Sport RiotUITests */ = {
+			isa = PBXGroup;
+			children = (
+				0567ECA13DA7724368A94CAC4135CF08 /* Pods-Sport Riot-Sport RiotUITests.modulemap */,
+				B51B7642A09DD0CE4E0A9AEB133A32E9 /* Pods-Sport Riot-Sport RiotUITests-acknowledgements.markdown */,
+				5FBA1102D577FCB936828A9210D65A03 /* Pods-Sport Riot-Sport RiotUITests-acknowledgements.plist */,
+				7E44FD4E5CB5C682BF8CDFC32514E9A8 /* Pods-Sport Riot-Sport RiotUITests-dummy.m */,
+				21545F488270EFDB131BBE5C05990A0C /* Pods-Sport Riot-Sport RiotUITests-Info.plist */,
+				DADB0C536FB112335A6BC075BF41C555 /* Pods-Sport Riot-Sport RiotUITests-umbrella.h */,
+				CE874F315A2B77A6FA4D8971AB9CEB6B /* Pods-Sport Riot-Sport RiotUITests.debug.xcconfig */,
+				1C95E1CEE46AC4BDFD86DBA67432310B /* Pods-Sport Riot-Sport RiotUITests.release.xcconfig */,
+			);
+			name = "Pods-Sport Riot-Sport RiotUITests";
+			path = "Target Support Files/Pods-Sport Riot-Sport RiotUITests";
+			sourceTree = "<group>";
+		};
+		CF1408CF629C7361332E53B88F7BD30C = {
+			isa = PBXGroup;
+			children = (
+				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
+				D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */,
+				965877409E01FB3D85D85E90E6B30185 /* Pods */,
+				5B191A7735196F9D2C165109AAD18319 /* Products */,
+				24C2A0965024A4C376471A4B2A869806 /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C0834CEBB1379A84116EF29F93051C60 /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		ED92973D58504E09395AF76DD0832A77 /* Pods-Sport Riot */ = {
+			isa = PBXGroup;
+			children = (
+				59114E37E3C9FFE10FDDBB8A19CDE5ED /* Pods-Sport Riot.modulemap */,
+				E39871215DC73DC2AF03A83643A93700 /* Pods-Sport Riot-acknowledgements.markdown */,
+				B2A4CE037D89677B6DB30BC31F916CED /* Pods-Sport Riot-acknowledgements.plist */,
+				E644B953390B542259AEB642F80A28F5 /* Pods-Sport Riot-dummy.m */,
+				B8CE5B59F633B984FA97100DCB3796E9 /* Pods-Sport Riot-Info.plist */,
+				85D0B31CAE715F41DC5E122BC9BE24E2 /* Pods-Sport Riot-umbrella.h */,
+				AA94929A6A291984AA0DF3FAFBB29BFB /* Pods-Sport Riot.debug.xcconfig */,
+				512F21FA045D4617520BA707F7C46F31 /* Pods-Sport Riot.release.xcconfig */,
+			);
+			name = "Pods-Sport Riot";
+			path = "Target Support Files/Pods-Sport Riot";
+			sourceTree = "<group>";
+		};
+		EEA599FE5C15138FF0981CCFB01E55AA /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				89F85ACF3D78B39506B75103B4694B36 /* SwiftLint.xcconfig */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/SwiftLint";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		02908227564B668FE73E7A1226AFD36D /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				35FBCA711230EF629F7BC85BB73CB7E1 /* Pods-Sport Riot-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1155BDAEE7C644791A3C7A17E1D2EEC9 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				59FD3C523438A0CD3F7E6DE44EFC35A3 /* Pods-Sport Riot-Sport RiotUITests-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		98A0C69C16C0648512E4141CF7C642B3 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				85C0C110224318AA348ACAEDA53EC942 /* Pods-Sport RiotTests-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		8D7104A6AB97539E83DF6B69C48C81BA /* Pods-Sport Riot */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C68B825A3C24E9BC19DCCD335E52720B /* Build configuration list for PBXNativeTarget "Pods-Sport Riot" */;
+			buildPhases = (
+				02908227564B668FE73E7A1226AFD36D /* Headers */,
+				798E118093928FC5EE082D8D77370753 /* Sources */,
+				89049E1A288FA590568D26E670716520 /* Frameworks */,
+				F4CF08E84AA879DAAA78B9FAE7208D4A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				8DCA6C55FCA2522DC1BE964C5618027F /* PBXTargetDependency */,
+			);
+			name = "Pods-Sport Riot";
+			productName = "Pods-Sport Riot";
+			productReference = A98D5FE74F2AE3A5552E41C40DE6A716 /* Pods_Sport_Riot.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		CB876269A2E258ACC8CB03929DE37D68 /* Pods-Sport Riot-Sport RiotUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9FF9E57F2DC7765B1F60CF7175ECC274 /* Build configuration list for PBXNativeTarget "Pods-Sport Riot-Sport RiotUITests" */;
+			buildPhases = (
+				1155BDAEE7C644791A3C7A17E1D2EEC9 /* Headers */,
+				2DC3E4FD1CC7515D325A7DECCCD1E49B /* Sources */,
+				D87A263476A67654D34EA55C83909FCC /* Frameworks */,
+				8E5A5C4A0FC03D15D65FE789E1511126 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				656C248B6D0A4C13E21E7631AD7D6B22 /* PBXTargetDependency */,
+			);
+			name = "Pods-Sport Riot-Sport RiotUITests";
+			productName = "Pods-Sport Riot-Sport RiotUITests";
+			productReference = D7EE4073CF8E7E5DE8500B7CA9AE0BFE /* Pods_Sport_Riot_Sport_RiotUITests.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		EBDF3385DF7BE4C9E84226386D184B81 /* Pods-Sport RiotTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 756B4D75156C75DA0D51EF4A43673F6F /* Build configuration list for PBXNativeTarget "Pods-Sport RiotTests" */;
+			buildPhases = (
+				98A0C69C16C0648512E4141CF7C642B3 /* Headers */,
+				93752BE3271C404242CB6B519791D7FF /* Sources */,
+				4DD07630752786C73F1B12A9B100B1B6 /* Frameworks */,
+				55CAC2C474FF6D08A8E1341646B37D44 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				6B1468A8AC1F26EAD2B3706C06A38B2C /* PBXTargetDependency */,
+			);
+			name = "Pods-Sport RiotTests";
+			productName = "Pods-Sport RiotTests";
+			productReference = 99D92C9D6DC1A6CA6DC4B4EBCC887DE7 /* Pods_Sport_RiotTests.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BFDFE7DC352907FC980B868725387E98 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1100;
+				LastUpgradeCheck = 1220;
+			};
+			buildConfigurationList = 4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = CF1408CF629C7361332E53B88F7BD30C;
+			productRefGroup = 5B191A7735196F9D2C165109AAD18319 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				8D7104A6AB97539E83DF6B69C48C81BA /* Pods-Sport Riot */,
+				CB876269A2E258ACC8CB03929DE37D68 /* Pods-Sport Riot-Sport RiotUITests */,
+				EBDF3385DF7BE4C9E84226386D184B81 /* Pods-Sport RiotTests */,
+				52B60EC2A583F24ACBB69C113F5488B9 /* SwiftLint */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		55CAC2C474FF6D08A8E1341646B37D44 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8E5A5C4A0FC03D15D65FE789E1511126 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F4CF08E84AA879DAAA78B9FAE7208D4A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		2DC3E4FD1CC7515D325A7DECCCD1E49B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				456E4EB5AC329B5EB63ADCEDCB43443E /* Pods-Sport Riot-Sport RiotUITests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		798E118093928FC5EE082D8D77370753 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F4691D4D4F230BB0BAA6D9A0870787C6 /* Pods-Sport Riot-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		93752BE3271C404242CB6B519791D7FF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0015A70515E439C456E6E29CF4286991 /* Pods-Sport RiotTests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		656C248B6D0A4C13E21E7631AD7D6B22 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = SwiftLint;
+			target = 52B60EC2A583F24ACBB69C113F5488B9 /* SwiftLint */;
+			targetProxy = E4540BE94849FC4C35C864E0A9971F20 /* PBXContainerItemProxy */;
+		};
+		6B1468A8AC1F26EAD2B3706C06A38B2C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Pods-Sport Riot";
+			target = 8D7104A6AB97539E83DF6B69C48C81BA /* Pods-Sport Riot */;
+			targetProxy = 8F9CD4461042881D37C612B771396A8A /* PBXContainerItemProxy */;
+		};
+		8DCA6C55FCA2522DC1BE964C5618027F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = SwiftLint;
+			target = 52B60EC2A583F24ACBB69C113F5488B9 /* SwiftLint */;
+			targetProxy = 373E303105DB552BFFE6708D30988E7C /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		2353D313CC11008936C0B9CEDB14FDB4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1C95E1CEE46AC4BDFD86DBA67432310B /* Pods-Sport Riot-Sport RiotUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-Sport Riot-Sport RiotUITests/Pods-Sport Riot-Sport RiotUITests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-Sport Riot-Sport RiotUITests/Pods-Sport Riot-Sport RiotUITests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		313D43676FCE739A9B7209934C953054 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 512F21FA045D4617520BA707F7C46F31 /* Pods-Sport Riot.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-Sport Riot/Pods-Sport Riot-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-Sport Riot/Pods-Sport Riot.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		3F2087C7A1CCAB0B11FA56C2F0B07C4E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = BA70D6BD01830068A0142BBE0471DC90 /* Pods-Sport RiotTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-Sport RiotTests/Pods-Sport RiotTests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-Sport RiotTests/Pods-Sport RiotTests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		4511D58CE0E4045017560BBD8A66BEB0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2F4B2BD256EDFA7D851A3356BF4338B3 /* Pods-Sport RiotTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-Sport RiotTests/Pods-Sport RiotTests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-Sport RiotTests/Pods-Sport RiotTests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		5F105DE130E7C58EB2BB2D3D56345DEF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		6C96951BDAA98864C04D66C794BC56FF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = CE874F315A2B77A6FA4D8971AB9CEB6B /* Pods-Sport Riot-Sport RiotUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-Sport Riot-Sport RiotUITests/Pods-Sport Riot-Sport RiotUITests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-Sport Riot-Sport RiotUITests/Pods-Sport Riot-Sport RiotUITests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		794335546EBA9CA3913168C45D307E36 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = AA94929A6A291984AA0DF3FAFBB29BFB /* Pods-Sport Riot.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-Sport Riot/Pods-Sport Riot-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-Sport Riot/Pods-Sport Riot.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		84D7C4574E8F0F3095623F0E06F5B402 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 89F85ACF3D78B39506B75103B4694B36 /* SwiftLint.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		AB9B38139C5627437C662CCBEFC5D805 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Release;
+		};
+		DEED47E09AF743F48544C1C4FEADEF47 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 89F85ACF3D78B39506B75103B4694B36 /* SwiftLint.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5F105DE130E7C58EB2BB2D3D56345DEF /* Debug */,
+				AB9B38139C5627437C662CCBEFC5D805 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		756B4D75156C75DA0D51EF4A43673F6F /* Build configuration list for PBXNativeTarget "Pods-Sport RiotTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3F2087C7A1CCAB0B11FA56C2F0B07C4E /* Debug */,
+				4511D58CE0E4045017560BBD8A66BEB0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9FF9E57F2DC7765B1F60CF7175ECC274 /* Build configuration list for PBXNativeTarget "Pods-Sport Riot-Sport RiotUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6C96951BDAA98864C04D66C794BC56FF /* Debug */,
+				2353D313CC11008936C0B9CEDB14FDB4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AE7B4FB01588B9E6DF09CB79FC7CE7BD /* Build configuration list for PBXAggregateTarget "SwiftLint" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DEED47E09AF743F48544C1C4FEADEF47 /* Debug */,
+				84D7C4574E8F0F3095623F0E06F5B402 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C68B825A3C24E9BC19DCCD335E52720B /* Build configuration list for PBXNativeTarget "Pods-Sport Riot" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				794335546EBA9CA3913168C45D307E36 /* Debug */,
+				313D43676FCE739A9B7209934C953054 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+}

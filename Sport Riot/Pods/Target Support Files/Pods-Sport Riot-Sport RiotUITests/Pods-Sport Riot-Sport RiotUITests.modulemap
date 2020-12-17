@@ -1,0 +1,6 @@
+framework module Pods_Sport_Riot_Sport_RiotUITests {
+  umbrella header "Pods-Sport Riot-Sport RiotUITests-umbrella.h"
+
+  export *
+  module * { export * }
+}
