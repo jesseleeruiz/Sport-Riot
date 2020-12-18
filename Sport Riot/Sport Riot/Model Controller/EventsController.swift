@@ -9,15 +9,60 @@ import Foundation
 
 class EventsController {
     
-    // https://api.seatgeek.com/2/events?per_page=15&page=2&client_id=MjE0NDQ0MDJ8MTYwODE1MTc4OS45MDA0OTc0
-    
     // MARK: - Properties
     private let baseURL = URL(string: "https://api.seatgeek.com/2/events")
     
-    func getEvents(page: Int, completion: @escaping (Result<[Event], SRError>) -> Void) {
-        let endpoint = baseURL?
-            .appendingPathComponent("per_page=15")
-            .appendingPathComponent("page=\(page)")
-            .appendingPathComponent(<#T##pathComponent: String##String#>)
+    // MARK: - Methods
+    func getEvents(page: String, completion: @escaping (Result<Event, SRError>) -> Void) {
+        
+        let queryParameters: [String: String] = [
+            "per_page": "15",
+            "page": page,
+            "client_id": ClientKey.clientKey
+        ]
+        
+        var urlComponents = URLComponents()
+        urlComponents.scheme = "https"
+        urlComponents.host = "api.seatgeek.com"
+        urlComponents.path = "/2/events"
+        urlComponents.setQueryItems(with: queryParameters)
+        
+        guard let requestURL = urlComponents.url else {
+            completion(.failure(.invalidResponse))
+            return
+        }
+        
+        var request = URLRequest(url: requestURL)
+        request.httpMethod = HTTPMethod.get.rawValue
+        
+        let task = URLSession.shared.dataTask(with: request) { data, response, error in
+            
+            if let error = error {
+                completion(.failure(.unableToComplete))
+                NSLog("\(error)")
+                return
+            }
+            
+            guard let response = response as? HTTPURLResponse,
+                  response.statusCode == 200 else {
+                completion(.failure(.invalidResponse))
+                return
+            }
+            
+            guard let data = data else {
+                completion(.failure(.invalidData))
+                return
+            }
+            
+            do {
+                let decoder = JSONDecoder()
+                decoder.keyDecodingStrategy = .convertFromSnakeCase
+                let events = try decoder.decode(Event.self, from: data)
+                completion(.success(events))
+            } catch {
+                completion(.failure(.invalidData))
+            }
+        }
+        task.resume()
     }
 }

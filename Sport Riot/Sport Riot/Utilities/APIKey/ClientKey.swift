@@ -8,5 +8,5 @@
 import Foundation
 
 struct ClientKey {
-    static var clientKey = "client_id=MjE0NDQ0MDJ8MTYwODE1MTc4OS45MDA0OTc0"
+    static var clientKey = "MjE0NDQ0MDJ8MTYwODE1MTc4OS45MDA0OTc0"
 }
