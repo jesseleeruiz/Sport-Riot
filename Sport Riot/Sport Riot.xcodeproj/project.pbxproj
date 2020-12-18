@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		3553508C61BCD83AC5DF60CB /* Pods_Sport_RiotTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 66E434CCFF23EA336AB09438 /* Pods_Sport_RiotTests.framework */; };
 		80DC2268258C77080068A86E /* URLComponents+EXT.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80DC2267258C77080068A86E /* URLComponents+EXT.swift */; };
+		80DC226F258C7C210068A86E /* EventsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80DC226E258C7C210068A86E /* EventsTableViewCell.swift */; };
+		80DC2274258C7CC20068A86E /* EventDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80DC2273258C7CC20068A86E /* EventDetailViewController.swift */; };
 		80F5E1DE258AA09200C86B8D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80F5E1DD258AA09200C86B8D /* AppDelegate.swift */; };
 		80F5E1E0258AA09200C86B8D /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80F5E1DF258AA09200C86B8D /* SceneDelegate.swift */; };
 		80F5E1E5258AA09200C86B8D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 80F5E1E3258AA09200C86B8D /* Main.storyboard */; };
@@ -54,6 +56,8 @@
 		6C5DA2E3CC590E618D42C055 /* Pods-Sport RiotTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Sport RiotTests.debug.xcconfig"; path = "Target Support Files/Pods-Sport RiotTests/Pods-Sport RiotTests.debug.xcconfig"; sourceTree = "<group>"; };
 		77C5A345BC33E2C424EC54B6 /* Pods_Sport_Riot.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Sport_Riot.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		80DC2267258C77080068A86E /* URLComponents+EXT.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "URLComponents+EXT.swift"; sourceTree = "<group>"; };
+		80DC226E258C7C210068A86E /* EventsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventsTableViewCell.swift; sourceTree = "<group>"; };
+		80DC2273258C7CC20068A86E /* EventDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventDetailViewController.swift; sourceTree = "<group>"; };
 		80F5E1DA258AA09200C86B8D /* Sport Riot.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Sport Riot.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		80F5E1DD258AA09200C86B8D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		80F5E1DF258AA09200C86B8D /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -123,6 +127,14 @@
 			path = Extensions;
 			sourceTree = "<group>";
 		};
+		80DC226D258C7C0B0068A86E /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				80DC226E258C7C210068A86E /* EventsTableViewCell.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
 		80F5E1D1258AA09200C86B8D = {
 			isa = PBXGroup;
 			children = (
@@ -151,6 +163,7 @@
 				80F5E242258AE5E800C86B8D /* Model */,
 				80F5E243258AE5F300C86B8D /* Model Controller */,
 				80F5E265258BE9DE00C86B8D /* View Controllers */,
+				80DC226D258C7C0B0068A86E /* Views */,
 				80DC2266258C76D70068A86E /* Extensions */,
 				80F5E24C258AF58200C86B8D /* Utilities */,
 				80F5E1DD258AA09200C86B8D /* AppDelegate.swift */,
@@ -220,6 +233,7 @@
 			isa = PBXGroup;
 			children = (
 				80F5E266258BE9F800C86B8D /* EventsTableViewController.swift */,
+				80DC2273258C7CC20068A86E /* EventDetailViewController.swift */,
 			);
 			path = "View Controllers";
 			sourceTree = "<group>";
@@ -463,10 +477,12 @@
 				80F5E256258B324E00C86B8D /* HTTPMethod.swift in Sources */,
 				80F5E23E258AE44800C86B8D /* Event.swift in Sources */,
 				80F5E25C258BD9D900C86B8D /* ClientKey.swift in Sources */,
+				80DC2274258C7CC20068A86E /* EventDetailViewController.swift in Sources */,
 				80F5E248258AEA8800C86B8D /* EventsController.swift in Sources */,
 				80DC2268258C77080068A86E /* URLComponents+EXT.swift in Sources */,
 				80F5E261258BD9E500C86B8D /* ClientKeyTemplate.swift in Sources */,
 				80F5E1E0258AA09200C86B8D /* SceneDelegate.swift in Sources */,
+				80DC226F258C7C210068A86E /* EventsTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

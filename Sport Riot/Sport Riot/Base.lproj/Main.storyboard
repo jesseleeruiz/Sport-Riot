@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17506" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="hp3-El-kIs">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="hp3-El-kIs">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17505"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -22,7 +22,7 @@
                             <textInputTraits key="textInputTraits" autocapitalizationType="words"/>
                         </searchBar>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="Cell" rowHeight="440" id="tgU-zg-DcM">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="EventCell" rowHeight="440" id="tgU-zg-DcM" customClass="EventsTableViewCell" customModule="Sport_Riot" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="72" width="414" height="440"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="tgU-zg-DcM" id="baM-3e-gDR">
@@ -93,6 +93,10 @@
                                     </constraints>
                                 </tableViewCellContentView>
                                 <connections>
+                                    <outlet property="eventDate" destination="VCk-Ju-ZE6" id="2z7-3u-uPV"/>
+                                    <outlet property="eventImage" destination="umR-WX-pVu" id="dX2-0v-cgz"/>
+                                    <outlet property="eventLocation" destination="a3h-Sb-gTc" id="98S-ya-fET"/>
+                                    <outlet property="eventTitle" destination="lkJ-gX-3vE" id="Mbm-Mk-0H9"/>
                                     <segue destination="5qv-h5-IZn" kind="show" identifier="showDetail" id="ZnN-SU-Y9K"/>
                                 </connections>
                             </tableViewCell>
@@ -103,15 +107,18 @@
                         </connections>
                     </tableView>
                     <navigationItem key="navigationItem" id="Ebn-OJ-Kva"/>
+                    <connections>
+                        <outlet property="searchBar" destination="yAx-Md-mhG" id="yfi-uL-JL5"/>
+                    </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="0bd-N1-xsQ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="905.79710144927549" y="-72.321428571428569"/>
         </scene>
-        <!--View Controller-->
+        <!--Event Detail View Controller-->
         <scene sceneID="Wdt-Dt-Lok">
             <objects>
-                <viewController id="5qv-h5-IZn" sceneMemberID="viewController">
+                <viewController id="5qv-h5-IZn" customClass="EventDetailViewController" customModule="Sport_Riot" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="PuG-f0-78X">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
