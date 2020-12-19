@@ -10,7 +10,11 @@ import UIKit
 class EventsTableViewCell: UITableViewCell {
     
     // MARK: - Properties
-    
+    var event: Event.Events? {
+        didSet {
+            updateViews()
+        }
+    }
     
     // MARK: - Outlets
     @IBOutlet var eventTitle: UILabel!
@@ -18,17 +22,12 @@ class EventsTableViewCell: UITableViewCell {
     @IBOutlet var eventDate: UILabel!
     @IBOutlet var eventImage: UIImageView!
     
-
-    // MARK: - Lifecycle
-    override func awakeFromNib() {
-        super.awakeFromNib()
-        // Initialization code
+    // MARK: - Methods
+    func updateViews() {
+        guard let event = event else { return }
+        
+        eventTitle.text = event.title
+        eventLocation.text = event.venue.displayLocation
+        eventDate.text = event.datetimeLocal
     }
-
-    override func setSelected(_ selected: Bool, animated: Bool) {
-        super.setSelected(selected, animated: animated)
-
-        // Configure the view for the selected state
-    }
-
 }

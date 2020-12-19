@@ -13,11 +13,10 @@ class EventsController {
     private let baseURL = URL(string: "https://api.seatgeek.com/2/events")
     
     // MARK: - Methods
-    func getEvents(page: String, completion: @escaping (Result<Event, SRError>) -> Void) {
-        
+    func getEvents(page: Int, completion: @escaping (Result<Event, SRError>) -> Void) {
         let queryParameters: [String: String] = [
             "per_page": "15",
-            "page": page,
+            "page": "\(page)",
             "client_id": ClientKey.clientKey
         ]
         
