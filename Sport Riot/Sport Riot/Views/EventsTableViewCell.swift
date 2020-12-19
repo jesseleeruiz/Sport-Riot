@@ -28,6 +28,6 @@ class EventsTableViewCell: UITableViewCell {
         
         eventTitle.text = event.title
         eventLocation.text = event.venue.displayLocation
-        eventDate.text = event.datetimeLocal
+        eventDate.text = "\(event.datetimeLocal.convertToDisplayFormat()) Local Time"
     }
 }
