@@ -22,6 +22,7 @@ class EventsTableViewController: UITableViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         getEvents(page: page)
+        tableView.separatorStyle = .none
     }
     
     func getEvents(page: Int) {
@@ -62,7 +63,6 @@ class EventsTableViewController: UITableViewController {
                 cell.eventImage.image = image
             }
         }
-        
         return cell
     }
     
