@@ -42,13 +42,19 @@
                                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5mo-yE-Tsg">
                                                     <rect key="frame" x="20" y="54.5" width="374" height="338"/>
                                                     <subviews>
-                                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="umR-WX-pVu">
+                                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="umR-WX-pVu">
                                                             <rect key="frame" x="0.0" y="0.0" width="374" height="338"/>
+                                                            <userDefinedRuntimeAttributes>
+                                                                <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                                    <integer key="value" value="14"/>
+                                                                </userDefinedRuntimeAttribute>
+                                                            </userDefinedRuntimeAttributes>
                                                         </imageView>
                                                     </subviews>
                                                     <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                                     <constraints>
                                                         <constraint firstItem="umR-WX-pVu" firstAttribute="top" secondItem="5mo-yE-Tsg" secondAttribute="top" id="3FI-0U-c3J"/>
+                                                        <constraint firstAttribute="height" constant="338" id="JaA-u4-Etb"/>
                                                         <constraint firstAttribute="bottom" secondItem="umR-WX-pVu" secondAttribute="bottom" id="N4a-qH-ddN"/>
                                                         <constraint firstItem="umR-WX-pVu" firstAttribute="leading" secondItem="5mo-yE-Tsg" secondAttribute="leading" id="e0O-Yu-Ezp"/>
                                                         <constraint firstAttribute="trailing" secondItem="umR-WX-pVu" secondAttribute="trailing" id="u5p-FD-rbn"/>
@@ -93,10 +99,10 @@
                                     </constraints>
                                 </tableViewCellContentView>
                                 <connections>
-                                    <outlet property="eventDate" destination="VCk-Ju-ZE6" id="2z7-3u-uPV"/>
-                                    <outlet property="eventImage" destination="umR-WX-pVu" id="dX2-0v-cgz"/>
-                                    <outlet property="eventLocation" destination="a3h-Sb-gTc" id="98S-ya-fET"/>
-                                    <outlet property="eventTitle" destination="lkJ-gX-3vE" id="Mbm-Mk-0H9"/>
+                                    <outlet property="eventDate" destination="VCk-Ju-ZE6" id="U8z-Zo-4eK"/>
+                                    <outlet property="eventImage" destination="umR-WX-pVu" id="hSB-4m-PH0"/>
+                                    <outlet property="eventLocation" destination="a3h-Sb-gTc" id="F1b-4a-Xkx"/>
+                                    <outlet property="eventTitle" destination="lkJ-gX-3vE" id="LSc-Ot-reK"/>
                                     <segue destination="5qv-h5-IZn" kind="show" identifier="showDetail" id="ZnN-SU-Y9K"/>
                                 </connections>
                             </tableViewCell>

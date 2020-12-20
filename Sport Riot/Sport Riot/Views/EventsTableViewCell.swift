@@ -10,6 +10,7 @@ import UIKit
 class EventsTableViewCell: UITableViewCell {
     
     // MARK: - Properties
+    var eventsController: EventsController?
     var event: Event.Events? {
         didSet {
             updateViews()
@@ -24,8 +25,9 @@ class EventsTableViewCell: UITableViewCell {
     
     // MARK: - Methods
     func updateViews() {
-        guard let event = event else { return }
         
+        guard let event = event else { return }
+          
         eventTitle.text = event.title
         eventLocation.text = event.venue.displayLocation
         eventDate.text = "\(event.datetimeLocal.convertToDisplayFormat()) Local Time"

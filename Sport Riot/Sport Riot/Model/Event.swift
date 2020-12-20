@@ -8,10 +8,10 @@
 
 import Foundation
 
-struct Event: Decodable, Equatable {
+struct Event: Codable {
     let events: [Events]
     
-    struct Events: Decodable, Equatable {
+    struct Events: Codable {
         let title: String
         let type: String
         let datetimeLocal: String
@@ -21,18 +21,19 @@ struct Event: Decodable, Equatable {
         let stats: Stats
         let venue: Venue
         
-        struct Performers: Decodable, Equatable {
+        struct Performers: Codable {
             let image: String
+            let id: Int
         }
 
-        struct Stats: Decodable, Equatable {
+        struct Stats: Codable {
             let listingCount: Int?
             let lowestPrice: Int?
             let averagePrice: Int?
             let highestPrice: Int?
         }
 
-        struct Venue: Decodable, Equatable {
+        struct Venue: Codable {
             let displayLocation: String
         }
     }

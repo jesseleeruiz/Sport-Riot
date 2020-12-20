@@ -5,12 +5,13 @@
 //  Created by Jesse Ruiz on 12/16/20.
 //
 
-import Foundation
+import UIKit
 
 class EventsController {
     
     // MARK: - Properties
     private let baseURL = URL(string: "https://api.seatgeek.com/2/events")
+    let cache = NSCache<NSString, UIImage>()
     
     // MARK: - Methods
     func getEvents(page: Int, completion: @escaping (Result<Event, SRError>) -> Void) {
@@ -61,6 +62,34 @@ class EventsController {
             } catch {
                 completion(.failure(.invalidData))
             }
+        }
+        task.resume()
+    }
+    
+    func getEventImage(from urlString: String, completion: @escaping (UIImage?) -> Void) {
+        
+        let cacheKey = NSString(string: urlString)
+
+        if let image = cache.object(forKey: cacheKey) {
+            completion(image)
+            return
+        }
+        
+        guard let url = URL(string: urlString) else {
+            completion(nil)
+            return
+        }
+        
+        let task = URLSession.shared.dataTask(with: url) { data, _, _ in
+            
+            guard let data = data,
+                  let image = UIImage(data: data) else {
+                completion(nil)
+                return
+            }
+            
+            self.cache.setObject(image, forKey: cacheKey)
+            completion(image)
         }
         task.resume()
     }

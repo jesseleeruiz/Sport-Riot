@@ -54,6 +54,15 @@ class EventsTableViewController: UITableViewController {
         
         cell.event = events[indexPath.row]
         
+        let performersImage = events[indexPath.row].performers.first
+        guard let image = (performersImage?.image) else { return UITableViewCell() }
+        
+        eventsController.getEventImage(from: image) { image in
+            DispatchQueue.main.async {
+                cell.eventImage.image = image
+            }
+        }
+        
         return cell
     }
     
