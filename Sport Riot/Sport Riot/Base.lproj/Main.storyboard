@@ -103,7 +103,7 @@
                                     <outlet property="eventImage" destination="umR-WX-pVu" id="hSB-4m-PH0"/>
                                     <outlet property="eventLocation" destination="a3h-Sb-gTc" id="F1b-4a-Xkx"/>
                                     <outlet property="eventTitle" destination="lkJ-gX-3vE" id="LSc-Ot-reK"/>
-                                    <segue destination="5qv-h5-IZn" kind="show" identifier="showDetail" id="ZnN-SU-Y9K"/>
+                                    <segue destination="5qv-h5-IZn" kind="show" identifier="ShowDetail" id="ZnN-SU-Y9K"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>

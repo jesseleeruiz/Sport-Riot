@@ -8,6 +8,10 @@
 import UIKit
 
 class EventDetailViewController: UIViewController {
+    
+    // MARK: - Properties
+    var eventsController: EventsController!
+    var events: Event.Events!
 
     override func viewDidLoad() {
         super.viewDidLoad()
