@@ -9,4 +9,5 @@ import Foundation
 
 struct Performers: Codable {
     let image: String
+    let shortName: String
 }

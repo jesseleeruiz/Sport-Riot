@@ -9,4 +9,5 @@ import Foundation
 
 struct Venue: Codable {
     let displayLocation: String
+    let name: String
 }
