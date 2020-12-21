@@ -7,7 +7,7 @@
 
 import Foundation
 
-struct Stats: Codable {
+struct Stats: Codable, Equatable {
     let listingCount: Int?
     let lowestPrice: Int?
     let averagePrice: Int?

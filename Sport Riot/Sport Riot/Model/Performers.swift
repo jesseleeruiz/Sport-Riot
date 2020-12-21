@@ -7,7 +7,7 @@
 
 import Foundation
 
-struct Performers: Codable {
+struct Performers: Codable, Equatable {
     let image: String
     let shortName: String
 }

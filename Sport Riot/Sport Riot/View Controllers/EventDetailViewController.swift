@@ -31,7 +31,16 @@ class EventDetailViewController: UIViewController {
     
     // MARK: - Actions
     @IBAction func addToFavorites(_ sender: UIBarButtonItem) {
+        sender.image = UIImage(systemName: SFSymbols.heartFill)
         
+        PersistenceManager.updateWith(favorite: event, actionType: .add) { error in
+            
+            guard let error = error else {
+                print("Success!")
+                return
+            }
+            print("Error: \(error)")
+        }
     }
     
     // MARK: - Methods

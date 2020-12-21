@@ -22,6 +22,7 @@ class EventsTableViewCell: UITableViewCell {
     @IBOutlet var eventLocation: UILabel!
     @IBOutlet var eventDate: UILabel!
     @IBOutlet var eventImage: UIImageView!
+    @IBOutlet var favoriteIcon: UIImageView!
     
     // MARK: - Methods
     func updateViews() {

@@ -18,6 +18,7 @@
 		80DC22C1259006060068A86E /* Performers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80DC22C0259006060068A86E /* Performers.swift */; };
 		80DC22C6259006130068A86E /* Stats.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80DC22C5259006130068A86E /* Stats.swift */; };
 		80DC22CB2590061A0068A86E /* Venue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80DC22CA2590061A0068A86E /* Venue.swift */; };
+		80DC22D82591568E0068A86E /* PersistenceManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80DC22D72591568E0068A86E /* PersistenceManager.swift */; };
 		80F5E1DE258AA09200C86B8D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80F5E1DD258AA09200C86B8D /* AppDelegate.swift */; };
 		80F5E1E0258AA09200C86B8D /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80F5E1DF258AA09200C86B8D /* SceneDelegate.swift */; };
 		80F5E1E5258AA09200C86B8D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 80F5E1E3258AA09200C86B8D /* Main.storyboard */; };
@@ -72,6 +73,7 @@
 		80DC22C0259006060068A86E /* Performers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Performers.swift; sourceTree = "<group>"; };
 		80DC22C5259006130068A86E /* Stats.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Stats.swift; sourceTree = "<group>"; };
 		80DC22CA2590061A0068A86E /* Venue.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Venue.swift; sourceTree = "<group>"; };
+		80DC22D72591568E0068A86E /* PersistenceManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersistenceManager.swift; sourceTree = "<group>"; };
 		80F5E1DA258AA09200C86B8D /* Sport Riot.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Sport Riot.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		80F5E1DD258AA09200C86B8D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		80F5E1DF258AA09200C86B8D /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -226,6 +228,7 @@
 			isa = PBXGroup;
 			children = (
 				80F5E247258AEA8800C86B8D /* EventsController.swift */,
+				80DC22D72591568E0068A86E /* PersistenceManager.swift */,
 			);
 			path = "Model Controller";
 			sourceTree = "<group>";
@@ -503,6 +506,7 @@
 				80DC22B7258FFFB10068A86E /* Constants.swift in Sources */,
 				80F5E25C258BD9D900C86B8D /* ClientKey.swift in Sources */,
 				80DC2294258D949D0068A86E /* String+EXT.swift in Sources */,
+				80DC22D82591568E0068A86E /* PersistenceManager.swift in Sources */,
 				80DC2274258C7CC20068A86E /* EventDetailViewController.swift in Sources */,
 				80DC228F258D948C0068A86E /* Date+EXT.swift in Sources */,
 				80F5E248258AEA8800C86B8D /* EventsController.swift in Sources */,

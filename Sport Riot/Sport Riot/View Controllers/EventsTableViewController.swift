@@ -23,10 +23,18 @@ class EventsTableViewController: UITableViewController {
         super.viewDidLoad()
         getEvents(page: page)
         tableView.separatorStyle = .none
+        PersistenceManager.retrieveFavorites { result in
+            switch result {
+            case .success(let favorites):
+                print("This is in the favorite array: \(favorites)")
+            case .failure(let error):
+                break
+            }
+        }
+        tableView.reloadData()
     }
     
     func getEvents(page: Int) {
-        
         eventsController.getEvents(page: page) { [weak self] result in
             guard let self = self else { return }
             
@@ -63,6 +71,7 @@ class EventsTableViewController: UITableViewController {
                 cell.eventImage.image = image
             }
         }
+        
         return cell
     }
     

@@ -10,4 +10,6 @@ import Foundation
 enum SFSymbols {
     static let location = "mappin.and.ellipse"
     static let calendar = "calendar"
+    static let heartFill = "heart.fill"
+    static let heart = "heart"
 }

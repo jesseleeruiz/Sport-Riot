@@ -7,7 +7,7 @@
 
 import Foundation
 
-struct Venue: Codable {
+struct Venue: Codable, Equatable {
     let displayLocation: String
     let name: String
 }
