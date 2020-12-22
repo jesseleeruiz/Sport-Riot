@@ -11,7 +11,8 @@ class EventDetailViewController: UIViewController {
     
     // MARK: - Properties
     var eventsController: EventsController!
-    var event: Event.Events!
+    var event: Event.Events?
+    var favoriteEvents: [Event.Events]?
     
     // MARK: - Outlets
     @IBOutlet var eventImage: UIImageView!
@@ -22,6 +23,7 @@ class EventDetailViewController: UIViewController {
     @IBOutlet var eventLowestPrice: UILabel!
     @IBOutlet var eventAveragePrice: UILabel!
     @IBOutlet var eventHighestPrice: UILabel!
+    @IBOutlet var favoriteButton: UIBarButtonItem!
     
     // MARK: - Lifecycle
     override func viewDidLoad() {
@@ -31,15 +33,30 @@ class EventDetailViewController: UIViewController {
     
     // MARK: - Actions
     @IBAction func addToFavorites(_ sender: UIBarButtonItem) {
-        sender.image = UIImage(systemName: SFSymbols.heartFill)
         
-        PersistenceManager.updateWith(favorite: event, actionType: .add) { error in
+        guard let event = event else { return }
+        
+        if sender.image == UIImage(systemName: SFSymbols.heart) {
+            sender.image = UIImage(systemName: SFSymbols.heartFill)
             
-            guard let error = error else {
-                print("Success!")
-                return
+            PersistenceManager.updateWith(favorite: event, actionType: .add) { error in
+                
+                guard let error = error else {
+                    print("Event Added!")
+                    return
+                }
+                print("Error: \(error)")
             }
-            print("Error: \(error)")
+        } else {
+            sender.image = UIImage(systemName: SFSymbols.heart)
+            
+            PersistenceManager.updateWith(favorite: event, actionType: .remove) { error in
+                guard let error = error else {
+                    print("Event Removed!")
+                    return
+                }
+                print("Error: \(error)")
+            }
         }
     }
     
@@ -68,5 +85,11 @@ class EventDetailViewController: UIViewController {
         eventLowestPrice.text = "Lowest Price: $\(event.stats.lowestPrice ?? 0)"
         eventAveragePrice.text = "Average Price: $\(event.stats.averagePrice ?? 0)"
         eventHighestPrice.text = "Highest Price: $\(event.stats.highestPrice ?? 0)"
+        
+        if let favoritedEvent = favoriteEvents {
+            if favoritedEvent.contains(event) {
+                favoriteButton.image = UIImage(systemName: SFSymbols.heartFill)
+            }
+        }
     }
 }

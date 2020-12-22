@@ -16,6 +16,7 @@ class EventsTableViewCell: UITableViewCell {
             updateViews()
         }
     }
+    var favoriteEvents: [Event.Events]?
     
     // MARK: - Outlets
     @IBOutlet var eventTitle: UILabel!
@@ -32,5 +33,13 @@ class EventsTableViewCell: UITableViewCell {
         eventTitle.text = event.title
         eventLocation.text = event.venue.displayLocation
         eventDate.text = "\(event.datetimeLocal.convertToDisplayFormat()) Local Time"
+        
+        if let favoriteEvents = favoriteEvents {
+            if favoriteEvents.contains(event) {
+                favoriteIcon.isHidden = false
+            } else {
+                favoriteIcon.isHidden = true
+            }
+        }
     }
 }

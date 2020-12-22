@@ -12,6 +12,7 @@ class EventsTableViewController: UITableViewController {
     // MARK: - Properties
     let eventsController = EventsController()
     var events = [Event.Events]()
+    var favoriteEvents = [Event.Events]()
     var page = 1
     var moreEvents = true
     
@@ -23,15 +24,11 @@ class EventsTableViewController: UITableViewController {
         super.viewDidLoad()
         getEvents(page: page)
         tableView.separatorStyle = .none
-        PersistenceManager.retrieveFavorites { result in
-            switch result {
-            case .success(let favorites):
-                print("This is in the favorite array: \(favorites)")
-            case .failure(let error):
-                break
-            }
-        }
-        tableView.reloadData()
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        getFavorites()
     }
     
     func getEvents(page: Int) {
@@ -53,6 +50,23 @@ class EventsTableViewController: UITableViewController {
         }
     }
     
+    func getFavorites() {
+        PersistenceManager.retrieveFavorites { [weak self] result in
+            guard let self = self else { return }
+            
+            switch result {
+            case .success(let favorites):
+                self.favoriteEvents = favorites
+                DispatchQueue.main.async {
+                    self.tableView.reloadData()
+                }
+                print(self.favoriteEvents.count)
+            case .failure(let error):
+                print(error)
+            }
+        }
+    }
+    
     // MARK: - Table view data source
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return events.count
@@ -61,17 +75,17 @@ class EventsTableViewController: UITableViewController {
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         guard let cell = tableView.dequeueReusableCell(withIdentifier: "EventCell", for: indexPath) as? EventsTableViewCell else { return UITableViewCell() }
         
+        cell.favoriteEvents = favoriteEvents
         cell.event = events[indexPath.row]
         
         let performersImage = events[indexPath.row].performers.first
-        guard let image = (performersImage?.image) else { return UITableViewCell() }
-        
+        guard let image = performersImage?.image else { return UITableViewCell() }
+
         eventsController.getEventImage(from: image) { image in
             DispatchQueue.main.async {
                 cell.eventImage.image = image
             }
         }
-        
         return cell
     }
     
@@ -93,6 +107,7 @@ class EventsTableViewController: UITableViewController {
             if let eventDetailVC = segue.destination as? EventDetailViewController,
                let indexPath = tableView.indexPathForSelectedRow {
                 eventDetailVC.event = events[indexPath.row]
+                eventDetailVC.favoriteEvents = favoriteEvents
                 eventDetailVC.eventsController = eventsController
             }
         }
