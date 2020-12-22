@@ -13,17 +13,17 @@ class EventsTableViewController: UITableViewController {
     let eventsController = EventsController()
     var events = [Event.Events]()
     var favoriteEvents = [Event.Events]()
+    var filteredEvents = [Event.Events]()
     var page = 1
     var moreEvents = true
-    
-    // MARK: - Outlets
-    @IBOutlet var searchBar: UISearchBar!
+    var isSearching = false
     
     // MARK: - Lifecycle
     override func viewDidLoad() {
         super.viewDidLoad()
         getEvents(page: page)
         tableView.separatorStyle = .none
+        configureSearchController()
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -31,6 +31,7 @@ class EventsTableViewController: UITableViewController {
         getFavorites()
     }
     
+    // MARK: - Methods
     func getEvents(page: Int) {
         eventsController.getEvents(page: page) { [weak self] result in
             guard let self = self else { return }
@@ -69,23 +70,41 @@ class EventsTableViewController: UITableViewController {
     
     // MARK: - Table view data source
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return events.count
+        if isSearching {
+            return filteredEvents.count
+        } else {
+            return events.count
+        }
     }
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         guard let cell = tableView.dequeueReusableCell(withIdentifier: "EventCell", for: indexPath) as? EventsTableViewCell else { return UITableViewCell() }
         
-        cell.favoriteEvents = favoriteEvents
-        cell.event = events[indexPath.row]
-        
-        let performersImage = events[indexPath.row].performers.first
-        guard let image = performersImage?.image else { return UITableViewCell() }
+        if isSearching {
+            cell.event = filteredEvents[indexPath.row]
+            
+            let performersImage = filteredEvents[indexPath.row].performers.first
+            guard let image = performersImage?.image else { return UITableViewCell() }
+            
+            eventsController.getEventImage(from: image) { image in
+                DispatchQueue.main.async {
+                    cell.eventImage.image = image
+                }
+            }
+        } else {
+            cell.event = events[indexPath.row]
+            
+            let performersImage = events[indexPath.row].performers.first
+            guard let image = performersImage?.image else { return UITableViewCell() }
 
-        eventsController.getEventImage(from: image) { image in
-            DispatchQueue.main.async {
-                cell.eventImage.image = image
+            eventsController.getEventImage(from: image) { image in
+                DispatchQueue.main.async {
+                    cell.eventImage.image = image
+                }
             }
         }
+        
+        cell.favoriteEvents = favoriteEvents
         return cell
     }
     
@@ -106,10 +125,38 @@ class EventsTableViewController: UITableViewController {
         if segue.identifier == "ShowDetail" {
             if let eventDetailVC = segue.destination as? EventDetailViewController,
                let indexPath = tableView.indexPathForSelectedRow {
-                eventDetailVC.event = events[indexPath.row]
+                let activeArray = isSearching ? filteredEvents : events
+                let event = activeArray[indexPath.row]
+                eventDetailVC.event = event
                 eventDetailVC.favoriteEvents = favoriteEvents
                 eventDetailVC.eventsController = eventsController
             }
         }
+    }
+}
+
+extension EventsTableViewController: UISearchBarDelegate, UISearchResultsUpdating {
+    
+    func configureSearchController() {
+        let searchController = UISearchController()
+        searchController.searchResultsUpdater = self
+        searchController.searchBar.delegate = self
+        searchController.searchBar.placeholder = "Enter a type of event like Football or Concert"
+        navigationItem.searchController = searchController
+        searchController.obscuresBackgroundDuringPresentation = false
+    }
+
+    func updateSearchResults(for searchController: UISearchController) {
+        guard let filter = searchController.searchBar.text,
+              !filter.isEmpty else { return }
+
+        isSearching = true
+        filteredEvents = events.filter({ $0.type.lowercased().contains(filter.lowercased()) })
+        tableView.reloadData()
+    }
+    
+    func searchBarCancelButtonClicked(_ searchBar: UISearchBar) {
+        isSearching = false
+        tableView.reloadData()
     }
 }

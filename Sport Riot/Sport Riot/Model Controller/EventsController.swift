@@ -16,7 +16,7 @@ class EventsController {
     // MARK: - Methods
     func getEvents(page: Int, completion: @escaping (Result<Event, SRError>) -> Void) {
         let queryParameters: [String: String] = [
-            "per_page": "15",
+            "per_page": "30",
             "page": "\(page)",
             "client_id": ClientKey.clientKey
         ]

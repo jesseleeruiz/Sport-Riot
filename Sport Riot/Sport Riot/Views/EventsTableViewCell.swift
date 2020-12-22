@@ -17,6 +17,7 @@ class EventsTableViewCell: UITableViewCell {
         }
     }
     var favoriteEvents: [Event.Events]?
+    var performerImage: String?
     
     // MARK: - Outlets
     @IBOutlet var eventTitle: UILabel!
@@ -41,5 +42,27 @@ class EventsTableViewCell: UITableViewCell {
                 favoriteIcon.isHidden = true
             }
         }
+        
+        if let performersImage = event.performers.first {
+            let image = performersImage.image
+            
+            eventsController?.getEventImage(from: image, completion: { image in
+                DispatchQueue.main.async {
+                    self.eventImage.image = image
+                }
+            })
+        }
     }
+    
+//    func setImage(event: [Event.Events], indexPath: IndexPath) {
+//        
+//         let performersImage = event[indexPath.row].performers.first
+//         guard let image = performersImage?.image else { return }
+//         
+//        eventsController?.getEventImage(from: image) { image in
+//             DispatchQueue.main.async {
+//                self.eventImage.image = image
+//             }
+//         }
+//    }
 }

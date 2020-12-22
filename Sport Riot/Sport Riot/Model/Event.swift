@@ -7,10 +7,10 @@
 
 import Foundation
 
-struct Event: Codable, Equatable {
+struct Event: Codable, Equatable, Hashable {
     let events: [Events]
     
-    struct Events: Codable, Equatable {
+    struct Events: Codable, Equatable, Hashable {
         let title: String
         let type: String
         let datetimeLocal: String
