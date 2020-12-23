@@ -38,7 +38,7 @@ class EventsTableViewController: UITableViewController {
             
             switch result {
             case .success(let events):
-                if events.events.count < 100 { self.moreEvents = false }
+                if events.events.count < 30 { self.moreEvents = false }
                 for event in events.events {
                     self.events.append(event)
                 }

@@ -53,16 +53,4 @@ class EventsTableViewCell: UITableViewCell {
             })
         }
     }
-    
-//    func setImage(event: [Event.Events], indexPath: IndexPath) {
-//        
-//         let performersImage = event[indexPath.row].performers.first
-//         guard let image = performersImage?.image else { return }
-//         
-//        eventsController?.getEventImage(from: image) { image in
-//             DispatchQueue.main.async {
-//                self.eventImage.image = image
-//             }
-//         }
-//    }
 }
