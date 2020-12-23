@@ -60,6 +60,14 @@ class EventDetailViewController: UIViewController {
         }
     }
     
+    @IBAction func purchaseTicketButtonTapped(_ sender: UIButton) {
+        
+        guard let eventURL = event?.url,
+              let url = URL(string: eventURL) else { return }
+        
+        presentSafariVC(with: url)
+    }
+    
     // MARK: - Methods
     private func updateViews() {
         guard isViewLoaded else { return }

@@ -314,6 +314,9 @@
                                         <integer key="value" value="14"/>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="purchaseTicketButtonTapped:" destination="5qv-h5-IZn" eventType="touchUpInside" id="Vt6-KQ-bcv"/>
+                                </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="aAI-Xs-yZ9"/>
