@@ -27,8 +27,4 @@ class Sport_RiotUITests: XCTestCase {
         EventsTableViewPage(testCase: self)
             .verifyEventsTableViewPageIsShowing()
     }
-    
-    func testAddingEventToFavorite() {
-        
-    }
 }
