@@ -4,7 +4,7 @@
 
 ___
 ## Tech Stack 🤓
-UIKit | Storyboard | RESTful API | URLSession | Dispatch Queue | UISearchBar | Local Persistence | Safari Services | 
+UIKit | Storyboard | RESTful API | URLSession | Dispatch Queue | UISearchBar | Local Persistence | Safari Services | Unit/UI Testing  
 This project uses the **seatgeek.com API** ([API Documentation](http://platform.seatgeek.com)).  
 This project uses Swift Lint to maintain clean code. ([GitHub Link](https://github.com/realm/SwiftLint)).
 
