@@ -13,13 +13,18 @@
 		80DC2274258C7CC20068A86E /* EventDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80DC2273258C7CC20068A86E /* EventDetailViewController.swift */; };
 		80DC228F258D948C0068A86E /* Date+EXT.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80DC228E258D948B0068A86E /* Date+EXT.swift */; };
 		80DC2294258D949D0068A86E /* String+EXT.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80DC2293258D949D0068A86E /* String+EXT.swift */; };
-		80DC22B7258FFFB10068A86E /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80DC22B6258FFFB10068A86E /* Constants.swift */; };
 		80DC22BC259001690068A86E /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80DC22BB259001690068A86E /* CardView.swift */; };
 		80DC22C1259006060068A86E /* Performers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80DC22C0259006060068A86E /* Performers.swift */; };
 		80DC22C6259006130068A86E /* Stats.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80DC22C5259006130068A86E /* Stats.swift */; };
 		80DC22CB2590061A0068A86E /* Venue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80DC22CA2590061A0068A86E /* Venue.swift */; };
 		80DC22D82591568E0068A86E /* PersistenceManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80DC22D72591568E0068A86E /* PersistenceManager.swift */; };
 		80DC22E22592C9CF0068A86E /* UIViewController+EXT.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80DC22E12592C9CD0068A86E /* UIViewController+EXT.swift */; };
+		80DC22FC2593E2E30068A86E /* URLSessionDataTask+EXT.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80DC22FB2593E2E20068A86E /* URLSessionDataTask+EXT.swift */; };
+		80DC23042593E3330068A86E /* URLSession+EXT.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80DC23032593E3330068A86E /* URLSession+EXT.swift */; };
+		80DC23092593E4070068A86E /* MockURLSession.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80DC23082593E4060068A86E /* MockURLSession.swift */; };
+		80DC230E2593E4510068A86E /* MockURLSessionDataTask.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80DC230D2593E4510068A86E /* MockURLSessionDataTask.swift */; };
+		80DC236125941FDC0068A86E /* EventsTableViewPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80DC236025941FDC0068A86E /* EventsTableViewPage.swift */; };
+		80DC2369259420190068A86E /* TestPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80DC2368259420190068A86E /* TestPage.swift */; };
 		80F5E1DE258AA09200C86B8D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80F5E1DD258AA09200C86B8D /* AppDelegate.swift */; };
 		80F5E1E0258AA09200C86B8D /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80F5E1DF258AA09200C86B8D /* SceneDelegate.swift */; };
 		80F5E1E5258AA09200C86B8D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 80F5E1E3258AA09200C86B8D /* Main.storyboard */; };
@@ -69,13 +74,18 @@
 		80DC2273258C7CC20068A86E /* EventDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventDetailViewController.swift; sourceTree = "<group>"; };
 		80DC228E258D948B0068A86E /* Date+EXT.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date+EXT.swift"; sourceTree = "<group>"; };
 		80DC2293258D949D0068A86E /* String+EXT.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+EXT.swift"; sourceTree = "<group>"; };
-		80DC22B6258FFFB10068A86E /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		80DC22BB259001690068A86E /* CardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
 		80DC22C0259006060068A86E /* Performers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Performers.swift; sourceTree = "<group>"; };
 		80DC22C5259006130068A86E /* Stats.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Stats.swift; sourceTree = "<group>"; };
 		80DC22CA2590061A0068A86E /* Venue.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Venue.swift; sourceTree = "<group>"; };
 		80DC22D72591568E0068A86E /* PersistenceManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersistenceManager.swift; sourceTree = "<group>"; };
 		80DC22E12592C9CD0068A86E /* UIViewController+EXT.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+EXT.swift"; sourceTree = "<group>"; };
+		80DC22FB2593E2E20068A86E /* URLSessionDataTask+EXT.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "URLSessionDataTask+EXT.swift"; sourceTree = "<group>"; };
+		80DC23032593E3330068A86E /* URLSession+EXT.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "URLSession+EXT.swift"; sourceTree = "<group>"; };
+		80DC23082593E4060068A86E /* MockURLSession.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockURLSession.swift; sourceTree = "<group>"; };
+		80DC230D2593E4510068A86E /* MockURLSessionDataTask.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockURLSessionDataTask.swift; sourceTree = "<group>"; };
+		80DC236025941FDC0068A86E /* EventsTableViewPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventsTableViewPage.swift; sourceTree = "<group>"; };
+		80DC2368259420190068A86E /* TestPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestPage.swift; sourceTree = "<group>"; };
 		80F5E1DA258AA09200C86B8D /* Sport Riot.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Sport Riot.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		80F5E1DD258AA09200C86B8D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		80F5E1DF258AA09200C86B8D /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -144,6 +154,8 @@
 				80DC228E258D948B0068A86E /* Date+EXT.swift */,
 				80DC2293258D949D0068A86E /* String+EXT.swift */,
 				80DC22E12592C9CD0068A86E /* UIViewController+EXT.swift */,
+				80DC22FB2593E2E20068A86E /* URLSessionDataTask+EXT.swift */,
+				80DC23032593E3330068A86E /* URLSession+EXT.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -155,6 +167,24 @@
 				80DC22BB259001690068A86E /* CardView.swift */,
 			);
 			path = Views;
+			sourceTree = "<group>";
+		};
+		80DC22FA2593E21B0068A86E /* Mocks */ = {
+			isa = PBXGroup;
+			children = (
+				80DC23082593E4060068A86E /* MockURLSession.swift */,
+				80DC230D2593E4510068A86E /* MockURLSessionDataTask.swift */,
+			);
+			path = Mocks;
+			sourceTree = "<group>";
+		};
+		80DC235F25941FBD0068A86E /* Pages */ = {
+			isa = PBXGroup;
+			children = (
+				80DC236025941FDC0068A86E /* EventsTableViewPage.swift */,
+				80DC2368259420190068A86E /* TestPage.swift */,
+			);
+			path = Pages;
 			sourceTree = "<group>";
 		};
 		80F5E1D1258AA09200C86B8D = {
@@ -202,6 +232,7 @@
 			isa = PBXGroup;
 			children = (
 				80F5E1F4258AA09A00C86B8D /* Sport_RiotTests.swift */,
+				80DC22FA2593E21B0068A86E /* Mocks */,
 				80F5E1F6258AA09A00C86B8D /* Info.plist */,
 			);
 			path = "Sport RiotTests";
@@ -211,6 +242,7 @@
 			isa = PBXGroup;
 			children = (
 				80F5E1FF258AA09A00C86B8D /* Sport_RiotUITests.swift */,
+				80DC235F25941FBD0068A86E /* Pages */,
 				80F5E201258AA09A00C86B8D /* Info.plist */,
 			);
 			path = "Sport RiotUITests";
@@ -242,7 +274,6 @@
 				80F5E25A258BD9B500C86B8D /* APIKey */,
 				80F5E24D258AF59800C86B8D /* SRError.swift */,
 				80F5E255258B324E00C86B8D /* HTTPMethod.swift */,
-				80DC22B6258FFFB10068A86E /* Constants.swift */,
 			);
 			path = Utilities;
 			sourceTree = "<group>";
@@ -505,15 +536,16 @@
 				80F5E24E258AF59800C86B8D /* SRError.swift in Sources */,
 				80DC22CB2590061A0068A86E /* Venue.swift in Sources */,
 				80F5E267258BE9F800C86B8D /* EventsTableViewController.swift in Sources */,
+				80DC22FC2593E2E30068A86E /* URLSessionDataTask+EXT.swift in Sources */,
 				80F5E256258B324E00C86B8D /* HTTPMethod.swift in Sources */,
 				80F5E23E258AE44800C86B8D /* Event.swift in Sources */,
-				80DC22B7258FFFB10068A86E /* Constants.swift in Sources */,
 				80F5E25C258BD9D900C86B8D /* ClientKey.swift in Sources */,
 				80DC2294258D949D0068A86E /* String+EXT.swift in Sources */,
 				80DC22D82591568E0068A86E /* PersistenceManager.swift in Sources */,
 				80DC2274258C7CC20068A86E /* EventDetailViewController.swift in Sources */,
 				80DC228F258D948C0068A86E /* Date+EXT.swift in Sources */,
 				80F5E248258AEA8800C86B8D /* EventsController.swift in Sources */,
+				80DC23042593E3330068A86E /* URLSession+EXT.swift in Sources */,
 				80DC2268258C77080068A86E /* URLComponents+EXT.swift in Sources */,
 				80F5E261258BD9E500C86B8D /* ClientKeyTemplate.swift in Sources */,
 				80F5E1E0258AA09200C86B8D /* SceneDelegate.swift in Sources */,
@@ -526,6 +558,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				80DC230E2593E4510068A86E /* MockURLSessionDataTask.swift in Sources */,
+				80DC23092593E4070068A86E /* MockURLSession.swift in Sources */,
 				80F5E1F5258AA09A00C86B8D /* Sport_RiotTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -535,6 +569,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				80F5E200258AA09A00C86B8D /* Sport_RiotUITests.swift in Sources */,
+				80DC2369259420190068A86E /* TestPage.swift in Sources */,
+				80DC236125941FDC0068A86E /* EventsTableViewPage.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -698,7 +734,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 5792949ZYF;
 				INFOPLIST_FILE = "Sport Riot/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 14.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -719,7 +755,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 5792949ZYF;
 				INFOPLIST_FILE = "Sport Riot/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 14.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

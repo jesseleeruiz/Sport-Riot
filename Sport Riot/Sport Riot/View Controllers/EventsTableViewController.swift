@@ -22,22 +22,26 @@ class EventsTableViewController: UITableViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         getEvents(page: page)
-        tableView.separatorStyle = .none
         configureSearchController()
+        tableView.separatorStyle = .none
     }
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         getFavorites()
+        tableView.reloadData()
     }
     
     // MARK: - Methods
+    /// Retrieves all the events on this tableView Controller.
+    /// - Parameter page: This indicates which page you are on in the API call.
     func getEvents(page: Int) {
         eventsController.getEvents(page: page) { [weak self] result in
             guard let self = self else { return }
             
             switch result {
             case .success(let events):
+                // When the event count reaches less than 30 it will stop refreshing when you go to the very bottom of the screen.
                 if events.events.count < 30 { self.moreEvents = false }
                 for event in events.events {
                     self.events.append(event)
@@ -51,6 +55,7 @@ class EventsTableViewController: UITableViewController {
         }
     }
     
+    /// Retrieves all the favorited events.
     func getFavorites() {
         PersistenceManager.retrieveFavorites { [weak self] result in
             guard let self = self else { return }
@@ -61,9 +66,8 @@ class EventsTableViewController: UITableViewController {
                 DispatchQueue.main.async {
                     self.tableView.reloadData()
                 }
-                print(self.favoriteEvents.count)
             case .failure(let error):
-                print(error)
+                NSLog("Failed to get events: \(error)")
             }
         }
     }
@@ -80,12 +84,14 @@ class EventsTableViewController: UITableViewController {
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         guard let cell = tableView.dequeueReusableCell(withIdentifier: "EventCell", for: indexPath) as? EventsTableViewCell else { return UITableViewCell() }
         
+        // If you are searching in the search bar, this will return the filtered events.
+        // Otherwise, it will return the standard events.
         if isSearching {
             cell.event = filteredEvents[indexPath.row]
             
             let performersImage = filteredEvents[indexPath.row].performers.first
             guard let image = performersImage?.image else { return UITableViewCell() }
-            
+
             eventsController.getEventImage(from: image) { image in
                 DispatchQueue.main.async {
                     cell.eventImage.image = image
@@ -108,6 +114,7 @@ class EventsTableViewController: UITableViewController {
         return cell
     }
     
+    // This will change the page number in the getEvents function when you reach the bottom of the screen. So then it loads the next 50 events.
     override func scrollViewDidEndDragging(_ scrollView: UIScrollView, willDecelerate decelerate: Bool) {
         let offsetY = scrollView.contentOffset.y
         let contentHeight = scrollView.contentSize.height

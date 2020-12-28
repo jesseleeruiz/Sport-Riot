@@ -11,9 +11,18 @@ class EventsController {
     
     // MARK: - Properties
     private let baseURL = URL(string: "https://api.seatgeek.com/2/events")
-    let cache = NSCache<NSString, UIImage>()
+    private let cache = NSCache<NSString, UIImage>()
+    private let session: URLSessionProtocol
+    
+    init(session: URLSessionProtocol = URLSession.shared) {
+        self.session = session
+    }
     
     // MARK: - Methods
+    /// A function to grab all the events.
+    /// - Parameters:
+    ///   - page: This indicates what page you are on. Page number is 1-indexed and starts at 1.
+    ///   - completion: Completes the function with an Event result or with an error result.
     func getEvents(page: Int, completion: @escaping (Result<Event, SRError>) -> Void) {
         let queryParameters: [String: String] = [
             "per_page": "30",
@@ -35,7 +44,7 @@ class EventsController {
         var request = URLRequest(url: requestURL)
         request.httpMethod = HTTPMethod.get.rawValue
         
-        let task = URLSession.shared.dataTask(with: request) { data, response, error in
+        let task = session.dataTaskWithURL(url: requestURL) { data, response, error in
             
             if let error = error {
                 completion(.failure(.unableToComplete))
@@ -66,28 +75,32 @@ class EventsController {
         task.resume()
     }
     
+    /// A function to grab the images from the API.
+    /// - Parameters:
+    ///   - urlString: The image string you pass in to retrieve the image from the API.
+    ///   - completion: Completes the function with an UIImage.
     func getEventImage(from urlString: String, completion: @escaping (UIImage?) -> Void) {
-        
+
         let cacheKey = NSString(string: urlString)
 
         if let image = cache.object(forKey: cacheKey) {
             completion(image)
             return
         }
-        
+
         guard let url = URL(string: urlString) else {
             completion(nil)
             return
         }
-        
+
         let task = URLSession.shared.dataTask(with: url) { data, _, _ in
-            
+
             guard let data = data,
                   let image = UIImage(data: data) else {
                 completion(nil)
                 return
             }
-            
+
             self.cache.setObject(image, forKey: cacheKey)
             completion(image)
         }

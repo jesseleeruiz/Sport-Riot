@@ -10,7 +10,12 @@ import UIKit
 class CardView: UIView {
 
     override func layoutSubviews() {
-        backgroundColor = .systemBackground
+        if #available(iOS 13.0, *) {
+            backgroundColor = .systemBackground
+        } else {
+            // Fallback on earlier versions
+            backgroundColor = UIColor(named: "backgroundColor")
+        }
         layer.cornerRadius = 10
         layer.shadowColor = UIColor.systemGray.cgColor
         layer.shadowOffset = CGSize(width: 0, height: 0)

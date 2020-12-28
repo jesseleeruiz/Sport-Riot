@@ -19,6 +19,11 @@ enum PersistenceManager {
         static let favorites = "favorites"
     }
     
+    /// Updates the persistence manager with an event, the action (adding or removing), and the completion. You call this function when you are adding or removing from the persistence manager.
+    /// - Parameters:
+    ///   - favorite: This is the event the consumer is favoriting.
+    ///   - actionType: The action you are doing towards the persistence manager; either adding or removing an event.
+    ///   - completion: Completes this function with a success, adding or removing an event, or an error.
     static func updateWith(favorite: Event.Events, actionType: PersistenceActionType, completion: @escaping (SRError?) -> Void) {
         retrieveFavorites { result in
             switch result {
@@ -44,6 +49,8 @@ enum PersistenceManager {
         }
     }
     
+    /// Retrieves all the favorited events.
+    /// - Parameter completion: Completes the function with returning the event if it is favorited or an error if something went wrong.
     static func retrieveFavorites(completion: @escaping (Result<[Event.Events], SRError>) -> Void) {
         guard let favoritesData = defaults.object(forKey: Keys.favorites) as? Data else {
             completion(.success([]))
@@ -57,6 +64,9 @@ enum PersistenceManager {
         }
     }
     
+    /// Saves an event to the persistence manager.
+    /// - Parameter favorites: An event.
+    /// - Returns: Returns nil if you were able to favorite the event or an error if it was unable to favorite an event.
     static func save(favorites: [Event.Events]) -> SRError? {
         do {
             let encodedFavorites = try JSONEncoder().encode(favorites)

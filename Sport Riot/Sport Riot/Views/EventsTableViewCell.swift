@@ -30,7 +30,7 @@ class EventsTableViewCell: UITableViewCell {
     func updateViews() {
         
         guard let event = event else { return }
-          
+        
         eventTitle.text = event.title
         eventLocation.text = event.venue.displayLocation
         eventDate.text = "\(event.datetimeLocal.convertToDisplayFormat()) Local Time"
@@ -41,16 +41,6 @@ class EventsTableViewCell: UITableViewCell {
             } else {
                 favoriteIcon.isHidden = true
             }
-        }
-        
-        if let performersImage = event.performers.first {
-            let image = performersImage.image
-            
-            eventsController?.getEventImage(from: image, completion: { image in
-                DispatchQueue.main.async {
-                    self.eventImage.image = image
-                }
-            })
         }
     }
 }

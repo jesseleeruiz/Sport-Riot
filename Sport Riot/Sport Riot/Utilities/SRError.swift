@@ -7,6 +7,7 @@
 
 import Foundation
 
+// Custom error messages. 
 enum SRError: String, Error {
     case unableToComplete = "Unable to complete your request. Please check your internet connection."
     case invalidResponse = "Invalid response from the server. Please try again."

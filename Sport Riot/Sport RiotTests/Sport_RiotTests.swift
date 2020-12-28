@@ -10,25 +10,30 @@ import XCTest
 @testable import Sport_Riot
 
 class Sport_RiotTests: XCTestCase {
-
-    override func setUpWithError() throws {
-        // Put setup code here. This method is called before the invocation of each test method in the class.
+    var subject: EventsController!
+    
+    override func setUp() {
+        super.setUp()
+        subject = EventsController()
     }
-
-    override func tearDownWithError() throws {
-        // Put teardown code here. This method is called after the invocation of each test method in the class.
-    }
-
-    func testExample() throws {
-        // This is an example of a functional test case.
-        // Use XCTAssert and related functions to verify your tests produce the correct results.
-    }
-
-    func testPerformanceExample() throws {
-        // This is an example of a performance test case.
-        self.measure {
-            // Put the code you want to measure the time of here.
+    
+    func testFetchingEvents() {
+        let url = URL(string: "https://api.seatgeek.com/2/events")!
+        let page = 1
+        let expectation = XCTestExpectation(description: "Wait for \(url) to load.")
+        var fetchedEvents: Event?
+        
+        subject.getEvents(page: page) { result in
+            switch result {
+            case .success(let event):
+                fetchedEvents = event
+                expectation.fulfill()
+            case .failure(let error):
+                NSLog("\(error)")
+            }
         }
+        
+        wait(for: [expectation], timeout: 10)
+        XCTAssertNotNil(fetchedEvents, "There are events!")
     }
-
 }
